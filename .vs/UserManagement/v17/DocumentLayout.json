@@ -1,0 +1,919 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hp\\source\\repos\\UserManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|solutionrelative:usermanagement\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement.infrastructure\\sessionexpiryfilters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|solutionrelative:usermanagement.infrastructure\\sessionexpiryfilters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement.infrastructure\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|solutionrelative:usermanagement.infrastructure\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement.infrastructure\\repositories\\datalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|solutionrelative:usermanagement.infrastructure\\repositories\\datalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement.infrastructure\\repositories\\globalfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|solutionrelative:usermanagement.infrastructure\\repositories\\globalfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|solutionrelative:usermanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement.infrastructure\\irepositories\\idatalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|solutionrelative:usermanagement.infrastructure\\irepositories\\idatalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|solutionrelative:usermanagement.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement.infrastructure\\uow\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|solutionrelative:usermanagement.infrastructure\\uow\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement.infrastructure\\datacontext\\dappercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|solutionrelative:usermanagement.infrastructure\\datacontext\\dappercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement.infrastructure\\repositories\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|solutionrelative:usermanagement.infrastructure\\repositories\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement.infrastructure\\services\\ijwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|solutionrelative:usermanagement.infrastructure\\services\\ijwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DDCFE41-40C3-4192-B0BA-9D0B9D0BADAD}|DataLayer\\UserManagement.Domain.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\datalayer\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DDCFE41-40C3-4192-B0BA-9D0B9D0BADAD}|DataLayer\\UserManagement.Domain.csproj|solutionrelative:datalayer\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|solutionrelative:usermanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement.infrastructure\\uow\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|solutionrelative:usermanagement.infrastructure\\uow\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|solutionrelative:usermanagement.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement.infrastructure\\repositories\\appemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|solutionrelative:usermanagement.infrastructure\\repositories\\appemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement.infrastructure\\irepositories\\iglobalfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|solutionrelative:usermanagement.infrastructure\\irepositories\\iglobalfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement.infrastructure\\irepositories\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|solutionrelative:usermanagement.infrastructure\\irepositories\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement.infrastructure\\usermanagement.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|solutionrelative:usermanagement.infrastructure\\usermanagement.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C91149F-B701-4999-9F07-DF2FF07200BF}|UserManagement.API\\UserManagement.Application.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement.api\\usermanagement.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9C91149F-B701-4999-9F07-DF2FF07200BF}|UserManagement.API\\UserManagement.Application.csproj|solutionrelative:usermanagement.api\\usermanagement.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement\\usermanagement.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|solutionrelative:usermanagement\\usermanagement.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|solutionrelative:usermanagement\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement.infrastructure\\irepositories\\iappemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|solutionrelative:usermanagement.infrastructure\\irepositories\\iappemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DDCFE41-40C3-4192-B0BA-9D0B9D0BADAD}|DataLayer\\UserManagement.Domain.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\datalayer\\entities\\emailpayload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DDCFE41-40C3-4192-B0BA-9D0B9D0BADAD}|DataLayer\\UserManagement.Domain.csproj|solutionrelative:datalayer\\entities\\emailpayload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C91149F-B701-4999-9F07-DF2FF07200BF}|UserManagement.API\\UserManagement.Application.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement.api\\services\\senderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C91149F-B701-4999-9F07-DF2FF07200BF}|UserManagement.API\\UserManagement.Application.csproj|solutionrelative:usermanagement.api\\services\\senderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C91149F-B701-4999-9F07-DF2FF07200BF}|UserManagement.API\\UserManagement.Application.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement.api\\iservices\\isenderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C91149F-B701-4999-9F07-DF2FF07200BF}|UserManagement.API\\UserManagement.Application.csproj|solutionrelative:usermanagement.api\\iservices\\isenderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C91149F-B701-4999-9F07-DF2FF07200BF}|UserManagement.API\\UserManagement.Application.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement.api\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C91149F-B701-4999-9F07-DF2FF07200BF}|UserManagement.API\\UserManagement.Application.csproj|solutionrelative:usermanagement.api\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|solutionrelative:usermanagement\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C91149F-B701-4999-9F07-DF2FF07200BF}|UserManagement.API\\UserManagement.Application.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement.api\\services\\encryptrouteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C91149F-B701-4999-9F07-DF2FF07200BF}|UserManagement.API\\UserManagement.Application.csproj|solutionrelative:usermanagement.api\\services\\encryptrouteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C91149F-B701-4999-9F07-DF2FF07200BF}|UserManagement.API\\UserManagement.Application.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement.api\\customvalidation\\validpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C91149F-B701-4999-9F07-DF2FF07200BF}|UserManagement.API\\UserManagement.Application.csproj|solutionrelative:usermanagement.api\\customvalidation\\validpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C91149F-B701-4999-9F07-DF2FF07200BF}|UserManagement.API\\UserManagement.Application.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement.api\\dtos\\createapplicationuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C91149F-B701-4999-9F07-DF2FF07200BF}|UserManagement.API\\UserManagement.Application.csproj|solutionrelative:usermanagement.api\\dtos\\createapplicationuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement\\views\\home\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|solutionrelative:usermanagement\\views\\home\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|solutionrelative:usermanagement\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DDCFE41-40C3-4192-B0BA-9D0B9D0BADAD}|DataLayer\\UserManagement.Domain.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\datalayer\\entities\\usercommon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DDCFE41-40C3-4192-B0BA-9D0B9D0BADAD}|DataLayer\\UserManagement.Domain.csproj|solutionrelative:datalayer\\entities\\usercommon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement.infrastructure\\datacontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|solutionrelative:usermanagement.infrastructure\\datacontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement.infrastructure\\irepositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|solutionrelative:usermanagement.infrastructure\\irepositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DDCFE41-40C3-4192-B0BA-9D0B9D0BADAD}|DataLayer\\UserManagement.Domain.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\datalayer\\entities\\logincommon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DDCFE41-40C3-4192-B0BA-9D0B9D0BADAD}|DataLayer\\UserManagement.Domain.csproj|solutionrelative:datalayer\\entities\\logincommon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DDCFE41-40C3-4192-B0BA-9D0B9D0BADAD}|DataLayer\\UserManagement.Domain.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\datalayer\\entities\\applicationrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DDCFE41-40C3-4192-B0BA-9D0B9D0BADAD}|DataLayer\\UserManagement.Domain.csproj|solutionrelative:datalayer\\entities\\applicationrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DDCFE41-40C3-4192-B0BA-9D0B9D0BADAD}|DataLayer\\UserManagement.Domain.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\datalayer\\entities\\loggedinuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DDCFE41-40C3-4192-B0BA-9D0B9D0BADAD}|DataLayer\\UserManagement.Domain.csproj|solutionrelative:datalayer\\entities\\loggedinuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|solutionrelative:usermanagement\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement\\wwwroot\\js\\validation.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|solutionrelative:usermanagement\\wwwroot\\js\\validation.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|solutionrelative:usermanagement\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement\\views\\dashboard\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|solutionrelative:usermanagement\\views\\dashboard\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement\\wwwroot\\css\\dashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|solutionrelative:usermanagement\\wwwroot\\css\\dashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|solutionrelative:usermanagement\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|solutionrelative:usermanagement\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement\\views\\home\\loginsuccess.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAB37413-50D3-440A-BADE-9D906C16ABD3}|UserManagement\\UserManagement.Api.csproj|solutionrelative:usermanagement\\views\\home\\loginsuccess.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DDCFE41-40C3-4192-B0BA-9D0B9D0BADAD}|DataLayer\\UserManagement.Domain.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\datalayer\\entities\\applicationuserclaim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DDCFE41-40C3-4192-B0BA-9D0B9D0BADAD}|DataLayer\\UserManagement.Domain.csproj|solutionrelative:datalayer\\entities\\applicationuserclaim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DDCFE41-40C3-4192-B0BA-9D0B9D0BADAD}|DataLayer\\UserManagement.Domain.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\datalayer\\entities\\applicationuserrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DDCFE41-40C3-4192-B0BA-9D0B9D0BADAD}|DataLayer\\UserManagement.Domain.csproj|solutionrelative:datalayer\\entities\\applicationuserrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DDCFE41-40C3-4192-B0BA-9D0B9D0BADAD}|DataLayer\\UserManagement.Domain.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\datalayer\\entities\\applicationclaim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DDCFE41-40C3-4192-B0BA-9D0B9D0BADAD}|DataLayer\\UserManagement.Domain.csproj|solutionrelative:datalayer\\entities\\applicationclaim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement.infrastructure\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|solutionrelative:usermanagement.infrastructure\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\usermanagement.infrastructure\\irepositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC53F253-C612-4764-84B2-593A197620E9}|UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj|solutionrelative:usermanagement.infrastructure\\irepositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DDCFE41-40C3-4192-B0BA-9D0B9D0BADAD}|DataLayer\\UserManagement.Domain.csproj|c:\\users\\hp\\source\\repos\\usermanagement\\datalayer\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DDCFE41-40C3-4192-B0BA-9D0B9D0BADAD}|DataLayer\\UserManagement.Domain.csproj|solutionrelative:datalayer\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 15,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{5a4e9529-b6a0-46b5-be4f-0f0b239bc0eb}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DapperContext.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\DataContext\\DapperContext.cs",
+              "RelativeDocumentMoniker": "UserManagement.Infrastructure\\DataContext\\DapperContext.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\DataContext\\DapperContext.cs",
+              "RelativeToolTip": "UserManagement.Infrastructure\\DataContext\\DapperContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T16:32:22.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\UOW\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "UserManagement.Infrastructure\\UOW\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\UOW\\UnitOfWork.cs",
+              "RelativeToolTip": "UserManagement.Infrastructure\\UOW\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T17:07:02.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\Services\\JwtService.cs",
+              "RelativeDocumentMoniker": "UserManagement.Infrastructure\\Services\\JwtService.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\Services\\JwtService.cs",
+              "RelativeToolTip": "UserManagement.Infrastructure\\Services\\JwtService.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAwwFgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T11:22:00.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SessionExpiryFilters.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\SessionExpiryFilters.cs",
+              "RelativeDocumentMoniker": "UserManagement.Infrastructure\\SessionExpiryFilters.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\SessionExpiryFilters.cs",
+              "RelativeToolTip": "UserManagement.Infrastructure\\SessionExpiryFilters.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAwwBgAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T16:18:55.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "UserManagement.Infrastructure\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "UserManagement.Infrastructure\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAswA4AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T16:36:38.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataLogin.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\Repositories\\DataLogin.cs",
+              "RelativeDocumentMoniker": "UserManagement.Infrastructure\\Repositories\\DataLogin.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\Repositories\\DataLogin.cs",
+              "RelativeToolTip": "UserManagement.Infrastructure\\Repositories\\DataLogin.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAzwBcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T14:50:10.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\appsettings.json",
+              "RelativeDocumentMoniker": "UserManagement\\appsettings.json",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\appsettings.json",
+              "RelativeToolTip": "UserManagement\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-25T17:20:02.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IDataLogin.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\IRepositories\\IDataLogin.cs",
+              "RelativeDocumentMoniker": "UserManagement.Infrastructure\\IRepositories\\IDataLogin.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\IRepositories\\IDataLogin.cs",
+              "RelativeToolTip": "UserManagement.Infrastructure\\IRepositories\\IDataLogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T14:49:57.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "UserManagement\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "UserManagement\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwFIAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T16:50:47.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GlobalFunction.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\Repositories\\GlobalFunction.cs",
+              "RelativeDocumentMoniker": "UserManagement.Infrastructure\\Repositories\\GlobalFunction.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\Repositories\\GlobalFunction.cs",
+              "RelativeToolTip": "UserManagement.Infrastructure\\Repositories\\GlobalFunction.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAIwIcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T15:17:23.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\Repositories\\AuthService.cs",
+              "RelativeDocumentMoniker": "UserManagement.Infrastructure\\Repositories\\AuthService.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\Repositories\\AuthService.cs",
+              "RelativeToolTip": "UserManagement.Infrastructure\\Repositories\\AuthService.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAIwFYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T07:18:45.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\DataLayer\\Entities\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Entities\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\DataLayer\\Entities\\ApplicationUser.cs",
+              "RelativeToolTip": "DataLayer\\Entities\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T16:22:36.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IJwtService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\Services\\IJwtService.cs",
+              "RelativeDocumentMoniker": "UserManagement.Infrastructure\\Services\\IJwtService.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\Services\\IJwtService.cs",
+              "RelativeToolTip": "UserManagement.Infrastructure\\Services\\IJwtService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T15:29:55.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AppEmail.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\Repositories\\AppEmail.cs",
+              "RelativeDocumentMoniker": "UserManagement.Infrastructure\\Repositories\\AppEmail.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\Repositories\\AppEmail.cs",
+              "RelativeToolTip": "UserManagement.Infrastructure\\Repositories\\AppEmail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T15:54:11.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\Program.cs",
+              "RelativeDocumentMoniker": "UserManagement\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\Program.cs",
+              "RelativeToolTip": "UserManagement\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T13:58:05.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\UOW\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "UserManagement.Infrastructure\\UOW\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\UOW\\IUnitOfWork.cs",
+              "RelativeToolTip": "UserManagement.Infrastructure\\UOW\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T17:06:33.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "UserManagement.Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "UserManagement.Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAmwCQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T17:02:24.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\IRepositories\\IAuthService.cs",
+              "RelativeDocumentMoniker": "UserManagement.Infrastructure\\IRepositories\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\IRepositories\\IAuthService.cs",
+              "RelativeToolTip": "UserManagement.Infrastructure\\IRepositories\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T07:18:08.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IGlobalFunction.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\IRepositories\\IGlobalFunction.cs",
+              "RelativeDocumentMoniker": "UserManagement.Infrastructure\\IRepositories\\IGlobalFunction.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\IRepositories\\IGlobalFunction.cs",
+              "RelativeToolTip": "UserManagement.Infrastructure\\IRepositories\\IGlobalFunction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T15:18:08.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserManagement.Api.csproj",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\UserManagement.Api.csproj",
+              "RelativeDocumentMoniker": "UserManagement\\UserManagement.Api.csproj",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\UserManagement.Api.csproj",
+              "RelativeToolTip": "UserManagement\\UserManagement.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-29T07:03:43.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UserManagement.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.API\\UserManagement.Application.csproj",
+              "RelativeDocumentMoniker": "UserManagement.API\\UserManagement.Application.csproj",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.API\\UserManagement.Application.csproj",
+              "RelativeToolTip": "UserManagement.API\\UserManagement.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-10T18:00:49.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UserManagement.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj",
+              "RelativeToolTip": "UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-27T11:50:34.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "UserManagement\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "UserManagement\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBsAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T08:53:04.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IAppEmail.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\IRepositories\\IAppEmail.cs",
+              "RelativeDocumentMoniker": "UserManagement.Infrastructure\\IRepositories\\IAppEmail.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\IRepositories\\IAppEmail.cs",
+              "RelativeToolTip": "UserManagement.Infrastructure\\IRepositories\\IAppEmail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T15:53:44.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ISenderService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.API\\IServices\\ISenderService.cs",
+              "RelativeDocumentMoniker": "UserManagement.API\\IServices\\ISenderService.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.API\\IServices\\ISenderService.cs",
+              "RelativeToolTip": "UserManagement.API\\IServices\\ISenderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T16:03:22.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "SenderService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.API\\Services\\SenderService.cs",
+              "RelativeDocumentMoniker": "UserManagement.API\\Services\\SenderService.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.API\\Services\\SenderService.cs",
+              "RelativeToolTip": "UserManagement.API\\Services\\SenderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T16:03:40.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "EmailPayLoad.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\DataLayer\\Entities\\EmailPayLoad.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Entities\\EmailPayLoad.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\DataLayer\\Entities\\EmailPayLoad.cs",
+              "RelativeToolTip": "DataLayer\\Entities\\EmailPayLoad.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T16:06:30.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.API\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "UserManagement.API\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.API\\Services\\UserService.cs",
+              "RelativeToolTip": "UserManagement.API\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T17:01:11.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "UserManagement\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "UserManagement\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T17:15:40.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ValidPassword.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.API\\CustomValidation\\ValidPassword.cs",
+              "RelativeDocumentMoniker": "UserManagement.API\\CustomValidation\\ValidPassword.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.API\\CustomValidation\\ValidPassword.cs",
+              "RelativeToolTip": "UserManagement.API\\CustomValidation\\ValidPassword.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T17:18:33.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "EncryptRouteService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.API\\Services\\EncryptRouteService.cs",
+              "RelativeDocumentMoniker": "UserManagement.API\\Services\\EncryptRouteService.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.API\\Services\\EncryptRouteService.cs",
+              "RelativeToolTip": "UserManagement.API\\Services\\EncryptRouteService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T05:54:07.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CreateApplicationUserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.API\\DTOs\\CreateApplicationUserDTO.cs",
+              "RelativeDocumentMoniker": "UserManagement.API\\DTOs\\CreateApplicationUserDTO.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.API\\DTOs\\CreateApplicationUserDTO.cs",
+              "RelativeToolTip": "UserManagement.API\\DTOs\\CreateApplicationUserDTO.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwCEAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T17:03:14.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\Views\\Home\\Register.cshtml",
+              "RelativeDocumentMoniker": "UserManagement\\Views\\Home\\Register.cshtml",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\Views\\Home\\Register.cshtml",
+              "RelativeToolTip": "UserManagement\\Views\\Home\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T16:58:53.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "UserManagement\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "UserManagement\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T16:48:29.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\DataContext\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "UserManagement.Infrastructure\\DataContext\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\DataContext\\ApplicationDbContext.cs",
+              "RelativeToolTip": "UserManagement.Infrastructure\\DataContext\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T17:04:43.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "UserCommon.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\DataLayer\\Entities\\UserCommon.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Entities\\UserCommon.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\DataLayer\\Entities\\UserCommon.cs",
+              "RelativeToolTip": "DataLayer\\Entities\\UserCommon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T17:16:03.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "LoginCommon.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\DataLayer\\Entities\\LoginCommon.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Entities\\LoginCommon.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\DataLayer\\Entities\\LoginCommon.cs",
+              "RelativeToolTip": "DataLayer\\Entities\\LoginCommon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T16:25:14.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\IRepositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "UserManagement.Infrastructure\\IRepositories\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\IRepositories\\IUserRepository.cs",
+              "RelativeToolTip": "UserManagement.Infrastructure\\IRepositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T16:36:13.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "LoggedInUser.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\DataLayer\\Entities\\LoggedInUser.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Entities\\LoggedInUser.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\DataLayer\\Entities\\LoggedInUser.cs",
+              "RelativeToolTip": "DataLayer\\Entities\\LoggedInUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T17:12:31.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ApplicationRole.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\DataLayer\\Entities\\ApplicationRole.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Entities\\ApplicationRole.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\DataLayer\\Entities\\ApplicationRole.cs",
+              "RelativeToolTip": "DataLayer\\Entities\\ApplicationRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T06:44:28.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "UserManagement\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\Controllers\\UserController.cs",
+              "RelativeToolTip": "UserManagement\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T06:24:46.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\Views\\Dashboard\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "UserManagement\\Views\\Dashboard\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\Views\\Dashboard\\Dashboard.cshtml",
+              "RelativeToolTip": "UserManagement\\Views\\Dashboard\\Dashboard.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowEIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-05T17:28:10.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "UserManagement\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "UserManagement\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-07T16:56:29.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "validation.js",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\wwwroot\\js\\validation.js",
+              "RelativeDocumentMoniker": "UserManagement\\wwwroot\\js\\validation.js",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\wwwroot\\js\\validation.js",
+              "RelativeToolTip": "UserManagement\\wwwroot\\js\\validation.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-07T17:36:20.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "UserManagement\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "UserManagement\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T17:15:20.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "dashboard.css",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\wwwroot\\css\\dashboard.css",
+              "RelativeDocumentMoniker": "UserManagement\\wwwroot\\css\\dashboard.css",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\wwwroot\\css\\dashboard.css",
+              "RelativeToolTip": "UserManagement\\wwwroot\\css\\dashboard.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-06T17:15:11.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "UserManagement\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "UserManagement\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T16:08:24.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "ApplicationUserClaim.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\DataLayer\\Entities\\ApplicationUserClaim.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Entities\\ApplicationUserClaim.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\DataLayer\\Entities\\ApplicationUserClaim.cs",
+              "RelativeToolTip": "DataLayer\\Entities\\ApplicationUserClaim.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T06:42:17.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "LoginSuccess.cshtml",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\Views\\Home\\LoginSuccess.cshtml",
+              "RelativeDocumentMoniker": "UserManagement\\Views\\Home\\LoginSuccess.cshtml",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\Views\\Home\\LoginSuccess.cshtml",
+              "RelativeToolTip": "UserManagement\\Views\\Home\\LoginSuccess.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-02T16:26:37.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "ApplicationUserRole.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\DataLayer\\Entities\\ApplicationUserRole.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Entities\\ApplicationUserRole.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\DataLayer\\Entities\\ApplicationUserRole.cs",
+              "RelativeToolTip": "DataLayer\\Entities\\ApplicationUserRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T06:41:44.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "ApplicationClaim.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\DataLayer\\Entities\\ApplicationClaim.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Entities\\ApplicationClaim.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\DataLayer\\Entities\\ApplicationClaim.cs",
+              "RelativeToolTip": "DataLayer\\Entities\\ApplicationClaim.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T06:43:45.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\DataLayer\\Entities\\Customer.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Entities\\Customer.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\DataLayer\\Entities\\Customer.cs",
+              "RelativeToolTip": "DataLayer\\Entities\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T17:19:04.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\IRepositories\\IRepository.cs",
+              "RelativeDocumentMoniker": "UserManagement.Infrastructure\\IRepositories\\IRepository.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\IRepositories\\IRepository.cs",
+              "RelativeToolTip": "UserManagement.Infrastructure\\IRepositories\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T17:08:52.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "UserManagement.Infrastructure\\Repositories\\Repository.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\Repositories\\Repository.cs",
+              "RelativeToolTip": "UserManagement.Infrastructure\\Repositories\\Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T17:09:14.497Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+﻿@using UserManagement.Application.DTOs
+@model CreateApplicationUserDTO
+@{
+    ViewData["Title"] = "Register User";
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link href="~/css/register.css" rel="stylesheet" /> 
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Register User</h2>
+                </div>
+                <div class="card-body">
+                    @if (ViewBag.Message != null)
+                    {
+                        <div class="alert alert-danger" role="alert">
+                            @ViewBag.Message
+                        </div>
+                    }
+
+                    <form method="post">
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Username)
+
+                            @Html.TextBoxFor(m => m.Username, new { @class = "form-control", @id = "username" })
+
+                            @Html.ValidationMessageFor(m => m.Username, null, new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Email)
+
+                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @id = "email" })
+
+                            @Html.ValidationMessageFor(m => m.Email, null, new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Password)
+
+                            @* @Html.PasswordFor(m => m.Password, new { @class = "form-control", @id = "password" }) *@
+                            <div class="input-group">
+                                @Html.PasswordFor(m => m.Password, new { @class = "form-control", @id = "password" })
+                                <div class="input-group-append">
+                                    <button type="button" class="togglePass" id="togglePassword">
+                                        <i class="fas fa-eye eyeicn" id="eyeIcon"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            @Html.ValidationMessageFor(m => m.Password, null, new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.ConfirmPassword)
+
+                            @* @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control", @id = "confirmPassword" }) *@
+
+                            <div class="input-group">
+                                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control", @id = "confirmPassword" })
+                                <div class="input-group-append">
+                                    <button type="button" class="togglePass" id="toggleConfirmPassword">
+                                        <i class="fas fa-eye eyeicn" id="eyeIconConfirm"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            @Html.ValidationMessageFor(m => m.ConfirmPassword, null, new { @class = "text-danger" })
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-2">Register</button>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <p>Go to Login <a asp-action="Index" asp-controller="Home">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="~/js/register.js"></script>

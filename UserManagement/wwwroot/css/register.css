@@ -1,0 +1,27 @@
+﻿.input-group {
+    position: relative; /* Make sure the parent has a relative position */
+}
+
+.togglePass {
+    position: absolute; /* Position the button relative to .input-group */
+    right: 0.5rem; /* Adjust the button's position from the right */
+    top: 50%; /* Position button in the middle of the input */
+    transform: translateY(-50%); /* Center the button vertically */
+    z-index: 999; /* Ensure button is on top of the input field */
+    border: none; /* Remove button border for cleaner look */
+    background: transparent; /* Remove button background */
+    padding: 0; /* Remove padding to fit the icon */
+    outline: none; /* Remove button outline */
+}
+
+    .togglePass:focus {
+        border: none; /* No border when focused */
+        outline: none; /* Remove outline on focus */
+    }
+
+/* class="togglePass" */
+.eyeicn {
+    font-size: 18px; /* Adjust the size of the icon */
+    color: #6c757d; /* Set the icon color */
+    outline: none;
+}

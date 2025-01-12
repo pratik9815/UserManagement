@@ -4,8 +4,10 @@ using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Mvc;
 using UserManagement.Api.Services;
 using UserManagement.Application.DTOs;
+using UserManagement.Application.IServices;
 using UserManagement.Domain.Entities;
 using UserManagement.Infrastructure.IRepositories;
+using UserManagement.Infrastructure.UOW;
 using UserManagement.Models;
 
 namespace UserManagement.Controllers
@@ -16,13 +18,19 @@ namespace UserManagement.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly IGlobalFunction _globalFunction;
         private readonly IUserRepository _userRepository;
-
-        public HomeController(ILogger<HomeController> logger, IAuthService authService, IGlobalFunction globalFunction, IUserRepository userRepository)
+        private readonly IUnitOfWork _uow;
+        private readonly IJwtService _jwtService;
+        public HomeController(ILogger<HomeController> logger, 
+            IAuthService authService, 
+            IGlobalFunction globalFunction, 
+            IUserRepository userRepository,
+            IUnitOfWork uow)
         {
             _logger = logger;
             _authService = authService;
             _globalFunction = globalFunction;
             _userRepository = userRepository;
+            _uow = uow;
         }
 
         public IActionResult Index()
@@ -148,10 +156,11 @@ namespace UserManagement.Controllers
             var menuList = new List<string>();
             HttpContext.Session.SetString("MenuCode", JsonSerializer.Serialize(menuList));
 
-            //var token = _authService.
+            var token = HttpContext.Request.Cookies["Token"]?.ToString();
 
             //generate refresh token and insert it into authtoken table and set the cookie
             string refreshtoken = Guid.NewGuid().ToString();
+            _uow.Login.InsertRefreshToken(refreshtoken, userCommon.Username);
             HttpContext.Response.Cookies.Append("refreshtoken", refreshtoken);
             CookieOptions options = new CookieOptions
             {
@@ -174,7 +183,7 @@ namespace UserManagement.Controllers
                 SessionId = HttpContext.Session.Id  
             };
 
-
+            //var accesstoken = _jwtService.CheckRefreshToken(token);
             return RedirectToAction("Dashboard","Dashboard");
         }
     }

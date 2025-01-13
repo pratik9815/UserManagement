@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\UserManagement.Api.csproj": {}
+    "C:\\ASP.NET CORE Project\\UserManagement\\UserManagement\\UserManagement.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hp\\source\\repos\\UserManagement\\DataLayer\\UserManagement.Domain.csproj": {
+    "C:\\ASP.NET CORE Project\\UserManagement\\DataLayer\\UserManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\source\\repos\\UserManagement\\DataLayer\\UserManagement.Domain.csproj",
+        "projectUniqueName": "C:\\ASP.NET CORE Project\\UserManagement\\DataLayer\\UserManagement.Domain.csproj",
         "projectName": "UserManagement.Domain",
-        "projectPath": "C:\\Users\\hp\\source\\repos\\UserManagement\\DataLayer\\UserManagement.Domain.csproj",
+        "projectPath": "C:\\ASP.NET CORE Project\\UserManagement\\DataLayer\\UserManagement.Domain.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\source\\repos\\UserManagement\\DataLayer\\obj\\",
+        "outputPath": "C:\\ASP.NET CORE Project\\UserManagement\\DataLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -79,14 +79,14 @@
         }
       }
     },
-    "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.API\\UserManagement.Application.csproj": {
+    "C:\\ASP.NET CORE Project\\UserManagement\\UserManagement.API\\UserManagement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.API\\UserManagement.Application.csproj",
+        "projectUniqueName": "C:\\ASP.NET CORE Project\\UserManagement\\UserManagement.API\\UserManagement.Application.csproj",
         "projectName": "UserManagement.Application",
-        "projectPath": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.API\\UserManagement.Application.csproj",
+        "projectPath": "C:\\ASP.NET CORE Project\\UserManagement\\UserManagement.API\\UserManagement.Application.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.API\\obj\\",
+        "outputPath": "C:\\ASP.NET CORE Project\\UserManagement\\UserManagement.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -107,8 +107,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\hp\\source\\repos\\UserManagement\\DataLayer\\UserManagement.Domain.csproj": {
-                "projectPath": "C:\\Users\\hp\\source\\repos\\UserManagement\\DataLayer\\UserManagement.Domain.csproj"
+              "C:\\ASP.NET CORE Project\\UserManagement\\DataLayer\\UserManagement.Domain.csproj": {
+                "projectPath": "C:\\ASP.NET CORE Project\\UserManagement\\DataLayer\\UserManagement.Domain.csproj"
               }
             }
           }
@@ -170,14 +170,14 @@
         }
       }
     },
-    "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj": {
+    "C:\\ASP.NET CORE Project\\UserManagement\\UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj",
+        "projectUniqueName": "C:\\ASP.NET CORE Project\\UserManagement\\UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj",
         "projectName": "UserManagement.Infrastructure",
-        "projectPath": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj",
+        "projectPath": "C:\\ASP.NET CORE Project\\UserManagement\\UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\obj\\",
+        "outputPath": "C:\\ASP.NET CORE Project\\UserManagement\\UserManagement.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -198,11 +198,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\hp\\source\\repos\\UserManagement\\DataLayer\\UserManagement.Domain.csproj": {
-                "projectPath": "C:\\Users\\hp\\source\\repos\\UserManagement\\DataLayer\\UserManagement.Domain.csproj"
+              "C:\\ASP.NET CORE Project\\UserManagement\\DataLayer\\UserManagement.Domain.csproj": {
+                "projectPath": "C:\\ASP.NET CORE Project\\UserManagement\\DataLayer\\UserManagement.Domain.csproj"
               },
-              "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.API\\UserManagement.Application.csproj": {
-                "projectPath": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.API\\UserManagement.Application.csproj"
+              "C:\\ASP.NET CORE Project\\UserManagement\\UserManagement.API\\UserManagement.Application.csproj": {
+                "projectPath": "C:\\ASP.NET CORE Project\\UserManagement\\UserManagement.API\\UserManagement.Application.csproj"
               }
             }
           }
@@ -268,14 +268,14 @@
         }
       }
     },
-    "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\UserManagement.Api.csproj": {
+    "C:\\ASP.NET CORE Project\\UserManagement\\UserManagement\\UserManagement.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\UserManagement.Api.csproj",
+        "projectUniqueName": "C:\\ASP.NET CORE Project\\UserManagement\\UserManagement\\UserManagement.Api.csproj",
         "projectName": "UserManagement.Api",
-        "projectPath": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\UserManagement.Api.csproj",
+        "projectPath": "C:\\ASP.NET CORE Project\\UserManagement\\UserManagement\\UserManagement.Api.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement\\obj\\",
+        "outputPath": "C:\\ASP.NET CORE Project\\UserManagement\\UserManagement\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -296,11 +296,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.API\\UserManagement.Application.csproj": {
-                "projectPath": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.API\\UserManagement.Application.csproj"
+              "C:\\ASP.NET CORE Project\\UserManagement\\UserManagement.API\\UserManagement.Application.csproj": {
+                "projectPath": "C:\\ASP.NET CORE Project\\UserManagement\\UserManagement.API\\UserManagement.Application.csproj"
               },
-              "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\hp\\source\\repos\\UserManagement\\UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj"
+              "C:\\ASP.NET CORE Project\\UserManagement\\UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj": {
+                "projectPath": "C:\\ASP.NET CORE Project\\UserManagement\\UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj"
               }
             }
           }

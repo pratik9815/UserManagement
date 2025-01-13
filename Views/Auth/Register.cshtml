@@ -1,0 +1,36 @@
+﻿@using UserManagement.Application.DTOs
+@model CreateApplicationUserDTO
+@{
+    ViewData["Title"] = "Register User";
+}
+<h2>Register User</h2>
+
+<form method="post" class="container align-items-center">
+    <div class="row">
+        <div class="form-group col">
+            @Html.LabelFor(m => m.Username)
+            @Html.TextBoxFor(m => m.Username , new { @class="form-control", @id="username" })
+            @Html.ValidationMessageFor(m=> m.Username, null, new {@class = "text-danger"})
+        </div>
+        <div class="col">
+            @Html.LabelFor(m => m.Email)
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @id = "email" })
+            @Html.ValidationMessageFor(m => m.Email, null, new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group col">
+            @Html.LabelFor(m => m.Password)
+            @Html.TextBoxFor(m => m.Password, new { @class = "form-control", @id = "password" })
+            @Html.ValidationMessageFor(m => m.Password, null, new { @class = "text-danger" })
+        </div>
+        <div class="form-group col"></div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <button type="submit" class="btn btn-primary mt-2">Register</button>
+        </div>
+    </div>
+</form>

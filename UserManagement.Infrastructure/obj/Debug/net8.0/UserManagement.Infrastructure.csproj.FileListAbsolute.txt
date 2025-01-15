@@ -18,3 +18,23 @@ C:\Users\hp\source\repos\UserManagement\UserManagement.Infrastructure\obj\Debug\
 C:\Users\hp\source\repos\UserManagement\UserManagement.Infrastructure\obj\Debug\net8.0\UserManagement.Infrastructure.pdb
 C:\Users\hp\source\repos\UserManagement\UserManagement.Infrastructure\obj\Debug\net8.0\UserManagement.Infrastructure.genruntimeconfig.cache
 C:\Users\hp\source\repos\UserManagement\UserManagement.Infrastructure\obj\Debug\net8.0\ref\UserManagement.Infrastructure.dll
+C:\ASP.NET CORE Project\UserManagement\UserManagement.Infrastructure\bin\Debug\net8.0\UserManagement.Infrastructure.deps.json
+C:\ASP.NET CORE Project\UserManagement\UserManagement.Infrastructure\bin\Debug\net8.0\UserManagement.Infrastructure.runtimeconfig.json
+C:\ASP.NET CORE Project\UserManagement\UserManagement.Infrastructure\bin\Debug\net8.0\UserManagement.Infrastructure.dll
+C:\ASP.NET CORE Project\UserManagement\UserManagement.Infrastructure\bin\Debug\net8.0\UserManagement.Infrastructure.pdb
+C:\ASP.NET CORE Project\UserManagement\UserManagement.Infrastructure\bin\Debug\net8.0\UserManagement.Application.dll
+C:\ASP.NET CORE Project\UserManagement\UserManagement.Infrastructure\bin\Debug\net8.0\UserManagement.Domain.dll
+C:\ASP.NET CORE Project\UserManagement\UserManagement.Infrastructure\bin\Debug\net8.0\UserManagement.Domain.pdb
+C:\ASP.NET CORE Project\UserManagement\UserManagement.Infrastructure\bin\Debug\net8.0\UserManagement.Application.pdb
+C:\ASP.NET CORE Project\UserManagement\UserManagement.Infrastructure\obj\Debug\net8.0\UserManagement.Infrastructure.csproj.AssemblyReference.cache
+C:\ASP.NET CORE Project\UserManagement\UserManagement.Infrastructure\obj\Debug\net8.0\UserManagement.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\ASP.NET CORE Project\UserManagement\UserManagement.Infrastructure\obj\Debug\net8.0\UserManagement.Infrastructure.AssemblyInfoInputs.cache
+C:\ASP.NET CORE Project\UserManagement\UserManagement.Infrastructure\obj\Debug\net8.0\UserManagement.Infrastructure.AssemblyInfo.cs
+C:\ASP.NET CORE Project\UserManagement\UserManagement.Infrastructure\obj\Debug\net8.0\UserManagement.Infrastructure.csproj.CoreCompileInputs.cache
+C:\ASP.NET CORE Project\UserManagement\UserManagement.Infrastructure\obj\Debug\net8.0\UserManagement.Infrastructure.sourcelink.json
+C:\ASP.NET CORE Project\UserManagement\UserManagement.Infrastructure\obj\Debug\net8.0\UserMana.ED8CE3B0.Up2Date
+C:\ASP.NET CORE Project\UserManagement\UserManagement.Infrastructure\obj\Debug\net8.0\UserManagement.Infrastructure.dll
+C:\ASP.NET CORE Project\UserManagement\UserManagement.Infrastructure\obj\Debug\net8.0\refint\UserManagement.Infrastructure.dll
+C:\ASP.NET CORE Project\UserManagement\UserManagement.Infrastructure\obj\Debug\net8.0\UserManagement.Infrastructure.pdb
+C:\ASP.NET CORE Project\UserManagement\UserManagement.Infrastructure\obj\Debug\net8.0\UserManagement.Infrastructure.genruntimeconfig.cache
+C:\ASP.NET CORE Project\UserManagement\UserManagement.Infrastructure\obj\Debug\net8.0\ref\UserManagement.Infrastructure.dll

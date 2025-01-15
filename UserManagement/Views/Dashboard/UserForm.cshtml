@@ -1,0 +1,148 @@
+﻿@model UserManagement.Domain.Entities.UserFormModel
+@{
+    Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+<style>
+    .progress-container {
+        width: 100%;
+        height: 5px;
+        background-color: #ccc;
+        margin-bottom: 20px;
+    }
+
+    .progress-bar {
+        height: 5px;
+        background-color: #4CAF50;
+        width: 0%; /* Initially, the progress bar is empty */
+        transition: width 0.5s ease; /* Smooth transition effect */
+    }
+</style>
+
+<h2>Multi-Step Form</h2>
+<div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+</div>
+
+@* <form id="multiStepForm" method="post"> *@
+
+@using (Html.BeginForm("Step", "Dashboard", FormMethod.Post, new { @id = "multiStepForm" }))
+{
+    <div id="form-container">
+        <!-- Partial view for the first step will be loaded here -->
+    </div>
+
+    <div id="message" style="display: none;"></div>
+
+    <button type="submit" style="display:none;">Submit</button> <!-- Hidden Submit Button -->
+}
+
+@* </form> *@
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation-unobtrusive"></script>
+    <script>
+        $(document).ready(function () {
+            // Load the first step
+            loadStep(1);
+            // Navigate to the next step
+            $(document).on('click', '.next-btn', function () {
+                debugger;
+                var currentStep = $(this).data('current-step');
+                if ($("#multiStepForm").valid()) {
+                    loadStep(currentStep + 1);
+                } else {
+                    alert("Please fill in all required fields before proceeding.");
+                }
+            });
+
+            // Navigate to the previous step
+            $(document).on('click', '.prev-btn', function () {
+                var currentStep = $(this).data('current-step');
+                loadStep(currentStep - 1);
+            });
+
+            // Handle form submission via AJAX
+            $("#multiStepForm").submit(function (event) {
+                event.preventDefault();
+                var formData = $(this).serialize();
+
+                $.post("/Dashboard/SubmitForm", formData)
+                    .done(function (response) {
+                        if (response.success) {
+                            $("#message").text(response.message).show();
+                            $("#multiStepForm").hide();
+                        } else {
+                            $("#message").text(response.message).show();
+                        }
+                    })
+                    .fail(function () {
+                        $("#message").text("An error occurred while submitting the form.").show();
+                    });
+            });
+        });
+
+        function loadStep(step) {
+  
+            // if(step != 1)
+            // {
+            //     // Collect all form data
+            //     var formData = $('#multiStepForm').serializeArray();
+
+            //     // Save current state before loading next step
+            //     $.ajax({
+            //         url: '@Url.Action("SaveStep", "Dashboard")',
+            //         type: 'POST',
+            //         data: formData.concat({ name: 'currentStep', value: step }),
+            //         success: function(response) {
+            //             if (response.success) {
+            //                  debugger;
+            //                 // Load the next step
+            //                 loadStepContent(step)
+            //             } else {
+            //                 // Handle validation errors
+            //                 displayErrors(response.errors);
+            //             }
+            //         },
+            //         error: function(xhr, status, error) {
+            //             console.error('Ajax error:', error);
+            //             alert('Error saving form data');
+            //         }
+            //     });
+            // }
+            // else{
+                 loadStepContent(step)
+            // }
+        }
+
+        function loadStepContent(step) {
+            $.get('@Url.Action("Step", "Dashboard")', { step: step }, function(data) {
+                $('#form-container').html(data);
+                initializeValidation();
+            }).fail(function(xhr, status, error) {
+                console.error('Error loading step:', error);
+                alert('Error loading step content');
+            });
+            updateProgressBar(step, 3);
+        }
+
+
+        function initializeValidation() {
+                // Reinitialize client-side validation
+                $.validator.unobtrusive.parse('#mainForm');
+        }
+        function displayErrors(errors) {
+            errors.forEach(function(error) {
+                var fieldName = error.split(':')[0];
+                $(`[data-valmsg-for="${fieldName}"]`).text(error);
+            });
+        }
+        function updateProgressBar(currentStep, totalSteps) {
+          const progressBar = document.getElementById('progressBar');
+          const progressPercentage = ((currentStep - 1) / (totalSteps - 1)) * 100;
+          progressBar.style.width = progressPercentage + '%';
+        }
+        
+    </script>
+}

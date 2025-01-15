@@ -1,0 +1,31 @@
+﻿@model UserManagement.Domain.Entities.UserFormModel
+@{
+    int step = ViewBag.Step ?? 1;
+}
+
+<div id="step3" class="form-step p-4 border rounded shadow-sm">
+    <h3 class="mb-4">   Step 3</h3>
+
+    <div class="mb-3">
+
+        @Html.LabelFor(m => m.Step3Field1, new { @class = "form-label" })
+        @Html.TextBoxFor(m => m.Step3Field1, new { @class = "form-control", @placeholder = "Enter field 2" })
+        @Html.ValidationMessageFor(m => m.Step3Field1, null, new { @class = "text-danger" })
+    </div>
+
+    <div class="mb-3">
+        @Html.LabelFor(m => m.Step3Field2, new { @class = "form-label" })
+        @Html.TextBoxFor(m => m.Step3Field2, new { @class = "form-control", @placeholder = "Enter field 2" })
+        @Html.ValidationMessageFor(m => m.Step3Field2, null, new { @class = "text-danger" })
+    </div>
+
+    <div class="d-flex justify-content-between">
+        <button type="button" class="btn btn-secondary prev-btn" data-current-step="@step">
+            <i class="fas fa-arrow-left"></i> Previous
+        </button>
+        <button type="submit" class="btn btn-success">
+            Submit <i class="fas fa-check"></i>
+        </button>
+    </div>
+</div>
+

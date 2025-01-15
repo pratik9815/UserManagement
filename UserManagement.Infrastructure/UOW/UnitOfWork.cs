@@ -8,7 +8,7 @@ public class UnitOfWork : IUnitOfWork
 {
     private readonly DapperContext _dapperContext;
     private readonly IDataLogin _dataLogin;
-
+    private readonly IUserRepository _userRepository;
     public UnitOfWork(DapperContext dapperContext)
     {
         _dapperContext = dapperContext;
@@ -22,6 +22,15 @@ public class UnitOfWork : IUnitOfWork
                 return new DataLogin(_dapperContext);
             }
             return _dataLogin;
+        }
+    }
+    public IUserRepository User
+    {
+        get
+        {
+            if( _userRepository is null)
+                return new UserRepository(_dapperContext);
+            return _userRepository;
         }
     }
 }

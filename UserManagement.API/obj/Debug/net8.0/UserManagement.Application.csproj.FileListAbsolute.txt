@@ -14,3 +14,19 @@ C:\Users\hp\source\repos\UserManagement\UserManagement.API\obj\Debug\net8.0\User
 C:\Users\hp\source\repos\UserManagement\UserManagement.API\obj\Debug\net8.0\refint\UserManagement.Application.dll
 C:\Users\hp\source\repos\UserManagement\UserManagement.API\obj\Debug\net8.0\UserManagement.Application.pdb
 C:\Users\hp\source\repos\UserManagement\UserManagement.API\obj\Debug\net8.0\ref\UserManagement.Application.dll
+C:\ASP.NET CORE Project\UserManagement\UserManagement.API\bin\Debug\net8.0\UserManagement.Application.deps.json
+C:\ASP.NET CORE Project\UserManagement\UserManagement.API\bin\Debug\net8.0\UserManagement.Application.dll
+C:\ASP.NET CORE Project\UserManagement\UserManagement.API\bin\Debug\net8.0\UserManagement.Application.pdb
+C:\ASP.NET CORE Project\UserManagement\UserManagement.API\bin\Debug\net8.0\UserManagement.Domain.dll
+C:\ASP.NET CORE Project\UserManagement\UserManagement.API\bin\Debug\net8.0\UserManagement.Domain.pdb
+C:\ASP.NET CORE Project\UserManagement\UserManagement.API\obj\Debug\net8.0\UserManagement.Application.csproj.AssemblyReference.cache
+C:\ASP.NET CORE Project\UserManagement\UserManagement.API\obj\Debug\net8.0\UserManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\ASP.NET CORE Project\UserManagement\UserManagement.API\obj\Debug\net8.0\UserManagement.Application.AssemblyInfoInputs.cache
+C:\ASP.NET CORE Project\UserManagement\UserManagement.API\obj\Debug\net8.0\UserManagement.Application.AssemblyInfo.cs
+C:\ASP.NET CORE Project\UserManagement\UserManagement.API\obj\Debug\net8.0\UserManagement.Application.csproj.CoreCompileInputs.cache
+C:\ASP.NET CORE Project\UserManagement\UserManagement.API\obj\Debug\net8.0\UserManagement.Application.sourcelink.json
+C:\ASP.NET CORE Project\UserManagement\UserManagement.API\obj\Debug\net8.0\UserMana.22515BBA.Up2Date
+C:\ASP.NET CORE Project\UserManagement\UserManagement.API\obj\Debug\net8.0\UserManagement.Application.dll
+C:\ASP.NET CORE Project\UserManagement\UserManagement.API\obj\Debug\net8.0\refint\UserManagement.Application.dll
+C:\ASP.NET CORE Project\UserManagement\UserManagement.API\obj\Debug\net8.0\UserManagement.Application.pdb
+C:\ASP.NET CORE Project\UserManagement\UserManagement.API\obj\Debug\net8.0\ref\UserManagement.Application.dll

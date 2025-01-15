@@ -77,6 +77,14 @@ public class DapperContext
             return await connection.ExecuteScalarAsync<T>(sql, param);
         }
     }
+    public T ExecuteScalar<T>(string sql, object param = null)
+    {
+        using (var connection = CreateConnection())
+        {
+            return connection.ExecuteScalar<T>(sql, param);
+        }
+    }
+
 
     // Query stored procedure and return multiple results
     public async Task<IEnumerable<T>> QueryStoredProcAsync<T>(string storedProcName, object param = null)

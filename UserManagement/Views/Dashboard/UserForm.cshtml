@@ -1,4 +1,4 @@
-﻿@model UserManagement.Domain.Entities.UserFormModel
+﻿@* @model UserManagement.Domain.Entities.UserFormModel *@
 @{
     Layout = "~/Views/Shared/MasterLayout.cshtml";
 }
@@ -33,7 +33,7 @@
 
     <div id="message" style="display: none;"></div>
 
-    <button type="submit" style="display:none;">Submit</button> <!-- Hidden Submit Button -->
+    <button type="submit" style="display:none;">Preview</button> <!-- Hidden Submit Button -->
 }
 
 @* </form> *@
@@ -44,14 +44,13 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation-unobtrusive"></script>
     <script>
         $(document).ready(function () {
-            // Load the first step
-            loadStep(1);
-            // Navigate to the next step
+
+            loadNextStep(1);   
+
             $(document).on('click', '.next-btn', function () {
-                debugger;
                 var currentStep = $(this).data('current-step');
                 if ($("#multiStepForm").valid()) {
-                    loadStep(currentStep + 1);
+                    SaveStepRequest(currentStep + 1);
                 } else {
                     alert("Please fill in all required fields before proceeding.");
                 }
@@ -59,85 +58,137 @@
 
             // Navigate to the previous step
             $(document).on('click', '.prev-btn', function () {
+                debugger;
                 var currentStep = $(this).data('current-step');
-                loadStep(currentStep - 1);
+                loadPrevStep(currentStep - 1);
             });
 
             // Handle form submission via AJAX
             $("#multiStepForm").submit(function (event) {
                 event.preventDefault();
+                var step = $(this).data('current-step')
                 var formData = $(this).serialize();
-
+                GetFinalResult(step);
                 $.post("/Dashboard/SubmitForm", formData)
-                    .done(function (response) {
-                        if (response.success) {
-                            $("#message").text(response.message).show();
-                            $("#multiStepForm").hide();
-                        } else {
-                            $("#message").text(response.message).show();
-                        }
-                    })
-                    .fail(function () {
-                        $("#message").text("An error occurred while submitting the form.").show();
-                    });
-            });
+                   .done(function (response) {
+                       if (response.success) {
+                           $("#message").text(response.message).show();
+                           $("#multiStepForm").hide();
+                       } else {
+                           $("#message").text(response.message).show();
+                       }
+                   })
+                   .fail(function () {
+                       $("#message").text("An error occurred while submitting the form.").show();
+                   });
+                });
+
+            $(document).on('click','#previewBtn',function(){
+                debugger;
+                var step = $(this).data('current-step')
+                GetFinalResult(step)
+            })
         });
 
-        function loadStep(step) {
-  
-            // if(step != 1)
-            // {
-            //     // Collect all form data
-            //     var formData = $('#multiStepForm').serializeArray();
-
-            //     // Save current state before loading next step
-            //     $.ajax({
-            //         url: '@Url.Action("SaveStep", "Dashboard")',
-            //         type: 'POST',
-            //         data: formData.concat({ name: 'currentStep', value: step }),
-            //         success: function(response) {
-            //             if (response.success) {
-            //                  debugger;
-            //                 // Load the next step
-            //                 loadStepContent(step)
-            //             } else {
-            //                 // Handle validation errors
-            //                 displayErrors(response.errors);
-            //             }
-            //         },
-            //         error: function(xhr, status, error) {
-            //             console.error('Ajax error:', error);
-            //             alert('Error saving form data');
-            //         }
-            //     });
-            // }
-            // else{
-                 loadStepContent(step)
-            // }
+        function GetFinalResult(step){
+            var formData = $('#multiStepForm').serializeArray();
+            $.ajax({
+                url: '@Url.Action("FinalResult", "Dashboard")',
+                method:"POST",
+                data: formData.concat({name:'currentStep', value:step}),
+                success:function(res){
+                    loadFinalStep(step)
+                },
+                error: function(ex){
+                    console.log("This is a failed step")
+                }
+            })
         }
 
-        function loadStepContent(step) {
-            $.get('@Url.Action("Step", "Dashboard")', { step: step }, function(data) {
-                $('#form-container').html(data);
-                initializeValidation();
-            }).fail(function(xhr, status, error) {
-                console.error('Error loading step:', error);
-                alert('Error loading step content');
+        function SaveStepRequest(step){
+           var formData = $('#multiStepForm').serializeArray();
+           $.ajax({
+                url: '@Url.Action("SaveStep", "Dashboard")',
+                method: "POST",
+                data: formData.concat({ name: 'currentStep', value: step }),
+                // data:formData,
+                success: function(res){
+                    loadNextStep(step)
+                },
+                error: function(jqXHR, textStatus, errorThrown){
+                    console.log("First request failed: ", textStatus, errorThrown)
+                }
+
+           })
+        }
+
+        function loadFinalStep(step){
+            $.ajax({
+                url: '@Url.Action("FinalStep", "Dashboard")', // URL of the server-side action
+                type: 'GET', // HTTP method
+                data: { step: step }, // Data sent to the server
+                success: function(data) {
+                    // Success callback
+                    $('#form-container').html(data);
+                    initializeValidation();
+                },
+                error: function(xhr, status, error) {
+                    // Error callback
+                    console.error('Error loading step:', error);
+                    alert('Error loading step content');
+                }
+            });
+        }
+
+        function loadNextStep(step){
+            $.ajax({
+                url: '@Url.Action("Step", "Dashboard")', // URL of the server-side action
+                type: 'GET', // HTTP method
+                data: { step: step }, // Data sent to the server
+                success: function(data) {
+                    // Success callback
+                    $('#form-container').html(data);
+                    initializeValidation();
+                },
+                error: function(xhr, status, error) {
+                    // Error callback
+                    console.error('Error loading step:', error);
+                    alert('Error loading step content');
+                }
             });
             updateProgressBar(step, 3);
         }
 
+        function loadPrevStep(step){
+            $.ajax({
+                url: '@Url.Action("Step", "Dashboard")', // URL of the server-side action
+                type: 'GET', // HTTP method
+                data: { step: step }, // Data sent to the server
+                success: function(data) {
+                    // Success callback
+                    $('#form-container').html(data);
+                    initializeValidation();
+                },
+                error: function(xhr, status, error) {
+                    // Error callback
+                    console.error('Error loading step:', error);
+                    alert('Error loading step content');
+                }
+            });
+            updateProgressBar(step, 3);
+        }
 
         function initializeValidation() {
-                // Reinitialize client-side validation
-                $.validator.unobtrusive.parse('#mainForm');
+            $.validator.unobtrusive.parse('#multiStepForm');
         }
+
         function displayErrors(errors) {
             errors.forEach(function(error) {
                 var fieldName = error.split(':')[0];
                 $(`[data-valmsg-for="${fieldName}"]`).text(error);
             });
         }
+
         function updateProgressBar(currentStep, totalSteps) {
           const progressBar = document.getElementById('progressBar');
           const progressPercentage = ((currentStep - 1) / (totalSteps - 1)) * 100;

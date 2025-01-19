@@ -10,7 +10,6 @@ public class ValidPassword : RegularExpressionAttribute, IClientModelValidator
         //ErrorMessageResourceType = typeof(ValidationMessage);
         ErrorMessage = "Password must be at least 8 characters, contain at least one uppercase letter, one lowercase letter, one digit and one special character";
     }
-
     public void AddValidation(ClientModelValidationContext context)
     {
         //throw new NotImplementedException();

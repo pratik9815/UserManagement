@@ -1,4 +1,4 @@
-﻿@model UserManagement.Domain.Entities.UserFormModel
+﻿@model UserManagement.Application.ViewModel.RequiredFiles
 @{
     int step = ViewBag.Step ?? 1;
 }
@@ -9,7 +9,7 @@
     <div class="mb-3">
 
         @Html.LabelFor(m => m.Step3Field1, new { @class = "form-label" })
-        @Html.TextBoxFor(m => m.Step3Field1, new { @class = "form-control", @placeholder = "Enter field 2" })
+        @Html.TextBoxFor(m => m.Step3Field1, new { @class = "form-control", @placeholder = "Enter field 1" })
         @Html.ValidationMessageFor(m => m.Step3Field1, null, new { @class = "text-danger" })
     </div>
 
@@ -23,8 +23,8 @@
         <button type="button" class="btn btn-secondary prev-btn" data-current-step="@step">
             <i class="fas fa-arrow-left"></i> Previous
         </button>
-        <button type="submit" class="btn btn-success">
-            Submit <i class="fas fa-check"></i>
+        <button type="button" id="previewBtn" class="btn btn-success" data-current-step="@step">
+            Preview <i class="fas fa-eye"></i>
         </button>
     </div>
 </div>

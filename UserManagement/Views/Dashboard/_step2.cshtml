@@ -1,4 +1,4 @@
-﻿@model UserManagement.Domain.Entities.UserFormModel
+﻿@model UserManagement.Application.ViewModel.FamilyDetails
 @{
     int step = ViewBag.Step ?? 1;
 }
@@ -8,7 +8,7 @@
 
     <div class="mb-3">
         @Html.LabelFor(m => m.Step2Field1, new { @class = "form-label" })
-        @Html.TextBoxFor(m => m.Step2Field1, new { @class = "form-control", @placeholder = "Enter field 2" })
+        @Html.TextBoxFor(m => m.Step2Field1, new { @class = "form-control", @placeholder = "Enter field 1" })
         @Html.ValidationMessageFor(m => m.Step2Field1, null, new { @class = "text-danger" })
     </div>
 

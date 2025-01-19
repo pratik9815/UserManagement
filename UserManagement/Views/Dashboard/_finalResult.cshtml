@@ -1,0 +1,45 @@
+﻿@model UserManagement.Domain.Entities.UserFormModel
+@{
+    int step = ViewBag.Step ?? 1;
+    TempData["Title"] = "Review Your Form";
+}
+
+<div class="container mt-5">
+    <!-- Heading -->
+    <h2 class="mb-4 text-center">User Information</h2>
+
+    <!-- Card to display the User data -->
+    <div class="card shadow-lg p-4">
+        <div class="card-body">
+            <h5 class="card-title mb-4">@TempData["Title"]</h5>
+
+            <!-- Displaying the data in a list format -->
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Step1Field1:</strong> @Model.Step1Field1</li>
+                <li class="list-group-item"><strong>Step1Field2:</strong> @Model.Step1Field2</li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Step2Field1:</strong> @Model.Step2Field1</li>
+                <li class="list-group-item"><strong>Step2Field2:</strong> @Model.Step2Field2</li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Step3Field1:</strong> @Model.Step3Field1</li>
+                <li class="list-group-item"><strong>Step3Field2:</strong> @Model.Step3Field2</li>
+            </ul>
+
+            @* <div class="mt-4">
+                <a href="/Dashboard/SubmitForm" class="btn btn-secondary">Submit</a>
+            </div> *@
+            <div class="d-flex justify-content-between">
+                <button type="button" class="btn btn-secondary prev-btn" data-current-step="@step">
+                    <i class="fas fa-arrow-left"></i> Previous
+                </button>
+                <button type="submit" class="btn btn-success">
+                    Submit <i class="fas fa-check"></i>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+</div>

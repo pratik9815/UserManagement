@@ -322,3 +322,4 @@ C:\ASP.NET CORE Project\UserManagement\UserManagement\obj\Debug\net8.0\refint\Us
 C:\ASP.NET CORE Project\UserManagement\UserManagement\obj\Debug\net8.0\UserManagement.Api.pdb
 C:\ASP.NET CORE Project\UserManagement\UserManagement\obj\Debug\net8.0\UserManagement.Api.genruntimeconfig.cache
 C:\ASP.NET CORE Project\UserManagement\UserManagement\obj\Debug\net8.0\ref\UserManagement.Api.dll
+C:\ASP.NET CORE Project\UserManagement\UserManagement\bin\Debug\net8.0\Newtonsoft.Json.dll

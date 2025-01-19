@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace UserManagement.Domain.Entities;
@@ -27,4 +28,6 @@ public class UserFormModel
     [DisplayName("Second Field")]
     [Required(ErrorMessage = "Field 6 is required.")]
     public string Step3Field2 { get; set; }
+
+    //public PersonalDetails PersonalDetails { get; set; }
 }

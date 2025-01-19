@@ -145,7 +145,9 @@
     <nav>
         <div class="logo">
             <i class="bx bx-menu menu-icon"></i>
-            <span class="logo-name">User Management</span>
+            <span class="logo-name">
+            <a asp-action="Dashboard" asp-controller="Dashboard"></a>    User Management
+            </span>
         </div>
         <div class="sidebar">
             <div class="logo">
@@ -161,7 +163,7 @@
                             <span class="link">Dashboard</span>
                         </a>
                     </li>
-                    <li class="list">
+                   @*  <li class="list">
                         <a href="#" class="nav-link">
                             <i class="bx bx-bar-chart-alt-2 icon"></i>
                             <span class="link">Revenue</span>
@@ -190,7 +192,7 @@
                             <i class="bx bx-heart icon"></i>
                             <span class="link">Likes</span>
                         </a>
-                    </li>
+                    </li> *@
                     <li class="list">
                         <a href="#" class="nav-link">
                             <i class="bx bx-folder-open icon"></i>

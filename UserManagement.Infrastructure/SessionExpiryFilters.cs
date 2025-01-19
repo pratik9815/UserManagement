@@ -47,6 +47,7 @@ public class SessionExpiryFilters : ActionFilterAttribute
             RedirectToLogOff(actionExecutingContext);
             return;
         }
+        //RedirectToDashboard(actionExecutingContext);
         base.OnActionExecuting(actionExecutingContext);
         // If the browser session or authentication session has expired...
 
@@ -59,6 +60,14 @@ public class SessionExpiryFilters : ActionFilterAttribute
         {
             {"Controller", "Home"},
             { "Action", "Index" }
+        });
+    }
+    private void RedirectToDashboard(ActionExecutingContext context)
+    {
+        context.Result = new RedirectToRouteResult(new RouteValueDictionary
+        {
+            {"Controller", "Dashboard" },
+            {"Action", "Dashboard" }
         });
     }
 }

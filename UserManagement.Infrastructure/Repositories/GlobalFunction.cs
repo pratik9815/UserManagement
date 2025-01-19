@@ -90,10 +90,11 @@ public class GlobalFunction : IGlobalFunction
             byte[] key = Encoding.UTF8.GetBytes(_jwtSecretKey);
             TokenValidationParameters parameters = new TokenValidationParameters()
             {
-                RequireExpirationTime = true,
+                RequireExpirationTime = false,
                 ValidateIssuer = false,
                 ValidateAudience = false,
-                IssuerSigningKey = new SymmetricSecurityKey(key)
+                IssuerSigningKey = new SymmetricSecurityKey(key),
+                ValidateLifetime = false
             };
             ClaimsPrincipal principal = tokenHandler.ValidateToken(token, parameters, out SecurityToken securityToken);
             return principal;

@@ -33,7 +33,7 @@
 
     <div id="message" style="display: none;"></div>
 
-    <button type="submit" style="display:none;">Preview</button> <!-- Hidden Submit Button -->
+    @* <button type="submit" style="display:none;">Preview</button> <!-- Hidden Submit Button --> *@
 }
 
 @* </form> *@
@@ -66,17 +66,21 @@
             // Handle form submission via AJAX
             $("#multiStepForm").submit(function (event) {
                 event.preventDefault();
-                var step = $(this).data('current-step')
+                debugger;
+                // var step = $('.submit_btn').data('current-step')
                 var formData = $(this).serialize();
-                GetFinalResult(step);
+                // GetFinalResult(step);
                 $.post("/Dashboard/SubmitForm", formData)
                    .done(function (response) {
+                       $('#form-container').html(response);
                        if (response.success) {
                            $("#message").text(response.message).show();
                            $("#multiStepForm").hide();
+                           
                        } else {
                            $("#message").text(response.message).show();
                        }
+                       
                    })
                    .fail(function () {
                        $("#message").text("An error occurred while submitting the form.").show();
@@ -89,6 +93,19 @@
                 GetFinalResult(step)
             })
         });
+
+        // function SubmitForm(){
+        //     $.ajax({
+        //         url: '@Url.Action("Dashboard", "ShowSuccessPage")',
+        //         method:"GET",
+        //         success:function(res){
+        //              console.log("This is a success page")
+        //         },
+        //         error: function(ex){
+        //             console.log("This is a failed step")
+        //         }
+        //     })
+        // }
 
         function GetFinalResult(step){
             var formData = $('#multiStepForm').serializeArray();

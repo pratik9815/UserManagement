@@ -27,6 +27,13 @@ public class UserRepository : IUserRepository
         return objUserCommon;
     }
 
+    public List<RoleResponse> GetAllRoleList()
+    {
+        var sql = "select *from roles";
+        List<RoleResponse> data = _context.Query<RoleResponse>(sql).ToList();
+        return data;
+    }
+
     public DbResponse AssignRole(string roleId, string userName)
     {
         string sql = "spa_application_role_agent_user";

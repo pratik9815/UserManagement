@@ -8,9 +8,10 @@ namespace UserManagement.Api.Controllers
         {
             return View();
         }
-        public IActionResult GetCustomerById(string id)
+        public IActionResult GetUserById(string id)
         {
             return View();
         }
+
     }
 }

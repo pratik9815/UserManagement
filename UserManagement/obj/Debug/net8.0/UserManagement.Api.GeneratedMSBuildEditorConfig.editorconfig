@@ -32,6 +32,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXFVzZXJGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/ASP.NET CORE Project/UserManagement/UserManagement/Views/Dashboard/UserList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXFVzZXJMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/ASP.NET CORE Project/UserManagement/UserManagement/Views/Dashboard/_finalResult.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXF9maW5hbFJlc3VsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -70,6 +74,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/ASP.NET CORE Project/UserManagement/UserManagement/Views/Home/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ASP.NET CORE Project/UserManagement/UserManagement/Views/KYCForm/Success.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS1lDRm9ybVxTdWNjZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ASP.NET CORE Project/UserManagement/UserManagement/Views/KYCForm/_familyDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS1lDRm9ybVxfZmFtaWx5RGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ASP.NET CORE Project/UserManagement/UserManagement/Views/KYCForm/_personalDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS1lDRm9ybVxfcGVyc29uYWxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ASP.NET CORE Project/UserManagement/UserManagement/Views/KYCForm/_requiredFiles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS1lDRm9ybVxfcmVxdWlyZWRGaWxlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/ASP.NET CORE Project/UserManagement/UserManagement/Views/Shared/Error.cshtml]

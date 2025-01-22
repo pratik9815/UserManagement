@@ -208,6 +208,7 @@ C:\ASP.NET CORE Project\UserManagement\UserManagement\bin\Debug\net8.0\Microsoft
 C:\ASP.NET CORE Project\UserManagement\UserManagement\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 C:\ASP.NET CORE Project\UserManagement\UserManagement\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\ASP.NET CORE Project\UserManagement\UserManagement\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\ASP.NET CORE Project\UserManagement\UserManagement\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\ASP.NET CORE Project\UserManagement\UserManagement\bin\Debug\net8.0\System.ClientModel.dll
 C:\ASP.NET CORE Project\UserManagement\UserManagement\bin\Debug\net8.0\System.CodeDom.dll
 C:\ASP.NET CORE Project\UserManagement\UserManagement\bin\Debug\net8.0\System.Composition.AttributedModel.dll
@@ -322,4 +323,3 @@ C:\ASP.NET CORE Project\UserManagement\UserManagement\obj\Debug\net8.0\refint\Us
 C:\ASP.NET CORE Project\UserManagement\UserManagement\obj\Debug\net8.0\UserManagement.Api.pdb
 C:\ASP.NET CORE Project\UserManagement\UserManagement\obj\Debug\net8.0\UserManagement.Api.genruntimeconfig.cache
 C:\ASP.NET CORE Project\UserManagement\UserManagement\obj\Debug\net8.0\ref\UserManagement.Api.dll
-C:\ASP.NET CORE Project\UserManagement\UserManagement\bin\Debug\net8.0\Newtonsoft.Json.dll

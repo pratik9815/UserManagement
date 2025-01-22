@@ -2,6 +2,7 @@ using System.Diagnostics;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using UserManagement.Api.Services;
 using UserManagement.Application.DTOs;
 using UserManagement.Application.IServices;
@@ -76,7 +77,7 @@ namespace UserManagement.Controllers
                 {
                     HttpOnly = true,
                     SameSite = SameSiteMode.Lax,
-                    Secure = true,
+                    Secure = false,
                     IsEssential = true,
                     //Expires
                 });
@@ -92,10 +93,10 @@ namespace UserManagement.Controllers
             return View(new CreateApplicationUserDTO());
         }
         //[ServiceFilter<SessionExpiryFilters>]
-        public ActionResult LoginSuccess()
-        {
-            return RedirectToAction("Dashboard","Dashboard");
-        }
+        //public ActionResult LoginSuccess()
+        //{
+        //    return RedirectToAction("Dashboard","Dashboard");
+        //}
 
         public ActionResult Logout()
         {
@@ -153,10 +154,11 @@ namespace UserManagement.Controllers
 
         public IActionResult SetSessionAfterLogin(LoginRequest request,UserCommon userCommon)
         {
-
-            HttpContext.Session.SetString("MenuList", "Menu");
-            var menuList = new List<string>();
-            HttpContext.Session.SetString("MenuCode", JsonSerializer.Serialize(menuList));
+            var menuCodeList = _uow.Menu.GetMenuList();
+            var menuList = JsonConvert.SerializeObject(menuCodeList);
+            HttpContext.Session.SetString("MenuList", menuList);
+            List<string> menuCodes = new List<string>();    
+            HttpContext.Session.SetString("MenuCode", JsonConvert.SerializeObject(menuCodes));
 
             var token = HttpContext.Request.Cookies["Token"]?.ToString();
 

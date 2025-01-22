@@ -61,7 +61,7 @@
                             <div class="input-group">
                                 @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control", @id = "confirmPassword" })
                                 <div class="input-group-append">
-                                    <button type="button" class="togglePass" id="toggleConfirmPassword">
+                                    <button type="button" class="togglePass" id="toggleConfirmPassword" onclick="toggleConfirmPassword()">
                                         <i class="fas fa-eye eyeicn" id="eyeIconConfirm"></i>
                                     </button>
                                 </div>

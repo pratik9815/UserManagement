@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zTU6MuKGL+nG1c+to7Gcf/2rEzSYl6kC+QyMZfHqV7s=",
+  "Hash": "rF96QadNwtga0wNumP68yTd7HfIer9JLI5Brer5osgA=",
   "Source": "UserManagement.Api",
   "BasePath": "_content/UserManagement.Api",
   "Mode": "Default",
@@ -241,8 +241,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "s518rsu7an",
-      "Integrity": "4ELxxJJSKD18ClcEDTvSbnUG8USdWW5FmIEnwfaX37g=",
+      "Fingerprint": "of4czctw8x",
+      "Integrity": "jNtNdritwS2+EVm22Qwf2WS/9KnpNHUjADk6y9g0tfE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\register.js"
@@ -2155,7 +2155,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1413"
+          "Value": "1415"
         },
         {
           "Name": "Content-Type",
@@ -2163,11 +2163,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4ELxxJJSKD18ClcEDTvSbnUG8USdWW5FmIEnwfaX37g=\""
+          "Value": "\"jNtNdritwS2+EVm22Qwf2WS/9KnpNHUjADk6y9g0tfE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 Jan 2025 17:16:52 GMT"
+          "Value": "Mon, 20 Jan 2025 16:44:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2177,12 +2177,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-4ELxxJJSKD18ClcEDTvSbnUG8USdWW5FmIEnwfaX37g="
+          "Value": "sha256-jNtNdritwS2+EVm22Qwf2WS/9KnpNHUjADk6y9g0tfE="
         }
       ]
     },
     {
-      "Route": "js/register.s518rsu7an.js",
+      "Route": "js/register.of4czctw8x.js",
       "AssetFile": "C:\\ASP.NET CORE Project\\UserManagement\\UserManagement\\wwwroot\\js\\register.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2192,7 +2192,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1413"
+          "Value": "1415"
         },
         {
           "Name": "Content-Type",
@@ -2200,11 +2200,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4ELxxJJSKD18ClcEDTvSbnUG8USdWW5FmIEnwfaX37g=\""
+          "Value": "\"jNtNdritwS2+EVm22Qwf2WS/9KnpNHUjADk6y9g0tfE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 Jan 2025 17:16:52 GMT"
+          "Value": "Mon, 20 Jan 2025 16:44:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2214,7 +2214,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "s518rsu7an"
+          "Value": "of4czctw8x"
         },
         {
           "Name": "label",
@@ -2222,7 +2222,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-4ELxxJJSKD18ClcEDTvSbnUG8USdWW5FmIEnwfaX37g="
+          "Value": "sha256-jNtNdritwS2+EVm22Qwf2WS/9KnpNHUjADk6y9g0tfE="
         }
       ]
     },
@@ -7087,7 +7087,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 Jan 2025 17:16:52 GMT"
+          "Value": "Wed, 22 Jan 2025 08:18:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7124,7 +7124,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 Jan 2025 17:16:52 GMT"
+          "Value": "Wed, 22 Jan 2025 08:18:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7169,7 +7169,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 Jan 2025 17:16:52 GMT"
+          "Value": "Wed, 22 Jan 2025 08:18:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7214,7 +7214,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 Jan 2025 17:16:52 GMT"
+          "Value": "Wed, 22 Jan 2025 08:18:49 GMT"
         },
         {
           "Name": "Cache-Control",

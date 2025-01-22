@@ -51,6 +51,8 @@ public class AuthService : IAuthService
 
         var roles = user.UserRoles.Select(ur => ur.Role.Name).ToList();
 
+
+
         var claims = new List<Claim>
         {
             new Claim("FavouriteColor", "Blue"),

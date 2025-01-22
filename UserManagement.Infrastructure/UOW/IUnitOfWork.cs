@@ -11,4 +11,6 @@ public interface IUnitOfWork
     //Task<int> CompleteAsync(); // Commit changes
 
     IDataLogin Login { get; }
+    IMenuRepository Menu { get; }
+
 }

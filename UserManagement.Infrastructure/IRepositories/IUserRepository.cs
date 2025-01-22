@@ -1,4 +1,5 @@
-﻿using UserManagement.Domain.Entities;
+﻿using UserManagement.Application.DTOs;
+using UserManagement.Domain.Entities;
 
 namespace UserManagement.Infrastructure.IRepositories;
 

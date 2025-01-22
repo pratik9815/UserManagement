@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('togglePassword').addEventListener('click', togglePassword);
-    document.getElementById('toggleConfirmPassword').addEventListener('click', toggleConfirmPassword);
+    //document.getElementById('toggleConfirmPassword').addEventListener('click', toggleConfirmPassword);
 });
 // Function to toggle password visibility
 function togglePassword() {

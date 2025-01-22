@@ -29,6 +29,13 @@ public class DapperContext
             return await connection.QueryAsync<T>(sql, param);
         }
     }
+    public IEnumerable<T> Query<T>(string sql, object param = null)
+    {
+        using (var connection = CreateConnection())
+        {
+            return connection.Query<T>(sql, param);
+        }
+    }
     // Query a single record (first or default)
     public async Task<T> QueryFirstOrDefaultAsync<T>(string sql, object param = null)
     {

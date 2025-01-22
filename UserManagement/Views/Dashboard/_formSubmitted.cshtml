@@ -2,5 +2,9 @@
 @{
     TempData["Title"] = "Form Submitted";
 }
-<h1>@TempData["Title"]</h1>
-<p>Your form has been submitted</p>
+<div class="flex justify-center items-center">
+    <h1>@TempData["Title"]</h1>
+    <p>Your form has been submitted</p>
+    <a href="/Dashboard/Dashboard" class="btn btn-primary mt-3">Go To Dashboard</a>
+</div>
+

@@ -1,0 +1,16 @@
+﻿@model UserManagement.Application.ViewModel.FamilyDetails
+
+<form asp-action="Step2" method="post">
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" />
+        <span asp-validation-for="Email"></span>
+    </div>
+    <div>
+        <label asp-for="Phone"></label>
+        <input asp-for="Phone" />
+        <span asp-validation-for="Phone"></span>
+    </div>
+    <button type="submit" name="action" value="Previous">Previous</button>
+    <button type="submit" name="action" value="Next">Next</button>
+</form>

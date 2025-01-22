@@ -2,11 +2,18 @@
 using Newtonsoft.Json;
 using UserManagement.Api.Services;
 using UserManagement.Domain.Entities;
+using UserManagement.Infrastructure.IRepositories;
+using UserManagement.Infrastructure.Repositories;
 
 namespace UserManagement.Api.Controllers;
 public class DashboardController : Controller
 {
     private const string SessionKey = "UserForm";
+    private IUserRepository _userRepository;
+    public DashboardController(IUserRepository userRepository = null)
+    {
+        _userRepository = userRepository;
+    }
     //[ValidateAntiForgeryToken]
     [ServiceFilter<SessionExpiryFilters>]
     public IActionResult Index()
@@ -18,6 +25,13 @@ public class DashboardController : Controller
     {
         return View();
     }
+
+    [ServiceFilter<SessionExpiryFilters>]
+    public IActionResult UserList()
+    {
+        return View();
+    }
+
     [ServiceFilter<SessionExpiryFilters>]
     public IActionResult UserForm()
     {
@@ -64,15 +78,22 @@ public class DashboardController : Controller
     {
         ViewBag.Step = step;
         var model = GetModelFromTempData();
+        TempData.Keep(SessionKey);
         return PartialView("_finalResult", model);
     }
 
     [ServiceFilter<SessionExpiryFilters>]
-    [ValidateAntiForgeryToken]
-    public IActionResult SubmitForm()
+    //[ValidateAntiForgeryToken]
+    public IActionResult SubmitForm(UserFormModel model)
     {
-        var model = GetModelFromTempData();
+        var sessionModel = GetModelFromTempData();
         TempData.Remove(SessionKey);
+        return PartialView("_formSubmitted");
+    }
+    [ServiceFilter<SessionExpiryFilters>]
+    //[ValidateAntiForgeryToken]
+    public IActionResult ShowSuccessPage()
+    {
         return PartialView("_formSubmitted");
     }
     // Helper Methods

@@ -54,3 +54,5 @@ bld/
 *.pidb
 *.svclog
 *.scc
+./UserManagement/appsettings.json
+./UserManagement/appsettings.Development.json

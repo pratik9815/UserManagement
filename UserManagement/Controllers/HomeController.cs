@@ -64,6 +64,7 @@ namespace UserManagement.Controllers
 
                 if(common.Code != "0")
                 {
+                    TempData["Code"] = common.Code;
                     TempData["Message"] = common.Msg;
                     return View(request);
                 }
@@ -120,11 +121,13 @@ namespace UserManagement.Controllers
                 var response = await _authService.RegisterAsync(request);
                 if(response.Code == 0)
                 {
+                    TempData["Code"] = response.Code;
                     TempData["Message"] = response.Message;
                     return RedirectToAction("Index");
                 }
                 else
                 {
+                    TempData["Code"] = response.Code;
                     TempData["Message"] = response.Message;
                     return View(request);
                 }

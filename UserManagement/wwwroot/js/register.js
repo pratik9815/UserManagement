@@ -2,11 +2,11 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('togglePassword').addEventListener('click', togglePassword);
-    //document.getElementById('toggleConfirmPassword').addEventListener('click', toggleConfirmPassword);
+    document.getElementById('toggleConfirmPassword').addEventListener('click', toggleConfirmPassword);
 });
 // Function to toggle password visibility
 function togglePassword() {
-    var passwordField = document.getElementById("password");
+    var passwordField = document.getElementById("Password");
     var eyeIcon = document.getElementById("eyeIcon");
 
     if (passwordField.type === "password") {
@@ -22,7 +22,7 @@ function togglePassword() {
 
 // Function to toggle confirm password visibility
 function toggleConfirmPassword() {
-    var confirmPasswordField = document.getElementById("confirmPassword");
+    var confirmPasswordField = document.getElementById("ConfirmPassword");
     var eyeIconConfirm = document.getElementById("eyeIconConfirm");
 
     if (confirmPasswordField.type === "password") {

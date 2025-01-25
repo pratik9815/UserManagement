@@ -1,6 +1,6 @@
 ﻿@* @model UserManagement.Domain.Entities.UserFormModel *@
 @{
-    Layout = "~/Views/Shared/MasterLayout.cshtml";
+    Layout = "~/Views/Dashboard/Index.cshtml"; // Use the dashboard layout
 }
 <style>
     .progress-container {
@@ -52,7 +52,7 @@
                 if ($("#multiStepForm").valid()) {
                     SaveStepRequest(currentStep + 1);
                 } else {
-                    alert("Please fill in all required fields before proceeding.");
+                    // alert("Please fill in all required fields before proceeding.");
                 }
             });
 
@@ -93,19 +93,6 @@
                 GetFinalResult(step)
             })
         });
-
-        // function SubmitForm(){
-        //     $.ajax({
-        //         url: '@Url.Action("Dashboard", "ShowSuccessPage")',
-        //         method:"GET",
-        //         success:function(res){
-        //              console.log("This is a success page")
-        //         },
-        //         error: function(ex){
-        //             console.log("This is a failed step")
-        //         }
-        //     })
-        // }
 
         function GetFinalResult(step){
             var formData = $('#multiStepForm').serializeArray();

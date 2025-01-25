@@ -1,10 +1,11 @@
 ﻿
+@using Newtonsoft.Json
 @using UserManagement.Domain.Entities
 @{
     Layout = "~/Views/Shared/MasterLayout.cshtml"; // Use the dashboard layou
     ViewData["Title"] = "User Management";
-    // private readonly IHttpContextAccessor _httpContextAccessor;
-
+    var menu = _httpContextAccessor.HttpContext.Session.GetString("MenuList");
+    List<MenuInfo> info = JsonConvert.DeserializeObject<List<MenuInfo>>(menu);
 }
 @* <h1>User Management</h1> *@
 
@@ -14,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sidebar Menu | Side Navigation Bar</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    @* <link rel="stylesheet" href="css/style.css" /> *@
     <!-- Boxicons CSS -->
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
           rel="stylesheet" />
@@ -47,11 +48,11 @@
             box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
         }
 
-            nav .logo {
-                display: flex;
-                align-items: center;
-                margin: 0 24px;
-            }
+        nav .logo {
+            display: flex;
+            align-items: center;
+            margin: 0 24px;
+        }
 
         .logo .menu-icon {
             color: #333;
@@ -164,7 +165,7 @@
 
             <div class="sidebar-content">
                 <ul class="lists">
-                    <li class="list">
+                   @*  <li class="list">
                         <a asp-action="UserList" asp-controller="Dashboard" class="nav-link">
                             <i class="bx bx-home-alt icon"></i>
                             <span class="link">Dashboard</span>
@@ -175,7 +176,21 @@
                             <i class='bx bx-user icon'></i>
                             <span class="link">User Form</span>
                         </a>
-                    </li>
+                    </li> *@
+                    @if (info != null)
+                    {
+                        foreach (var item in info)
+                        {
+                            <li class="list">
+                                <a asp-action="@item.menu_action" asp-controller="@item.menu_controller" class="nav-link">
+                                    <i class="@item.menu_icon"></i>
+                                    <span class="link">@item.menu_name</span>
+                                </a>
+                            </li>
+                        }
+                    }
+
+
                     @*  <li class="list">
                         <a href="#" class="nav-link">
                             <i class="bx bx-bar-chart-alt-2 icon"></i>

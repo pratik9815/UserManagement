@@ -7,79 +7,113 @@
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<link href="~/css/register.css" rel="stylesheet" /> 
-<div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <div class="card">
-                <div class="card-header">
-                    <h2>Register User</h2>
-                </div>
-                <div class="card-body">
-                    @if (ViewBag.Message != null)
-                    {
-                        <div class="alert alert-danger" role="alert">
-                            @ViewBag.Message
-                        </div>
-                    }
+<link href="~/css/register.css" rel="stylesheet" />
+<style>
+    .avatar-placeholder {
+        width: 60px;
+        height: 60px;
+        background-color: #cccccc;
+        border-radius: 50%;
+        margin: 0 auto 2rem;
+    }
 
-                    <form method="post">
-                        <div class="form-group">
-                            @Html.LabelFor(m => m.Username)
+    .form-container {
+        max-width: 450px;
+        margin: 2rem auto;
+        padding: 2rem;
+    }
 
-                            @Html.TextBoxFor(m => m.Username, new { @class = "form-control", @id = "username" })
+    .form-control {
+        border-radius: 8px;
+        padding: 0.75rem 1rem;
+    }
 
-                            @Html.ValidationMessageFor(m => m.Username, null, new { @class = "text-danger" })
-                        </div>
-                        <div class="form-group">
-                            @Html.LabelFor(m => m.Email)
+    .btn-create {
 
-                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @id = "email" })
+        width: 100%;
 
-                            @Html.ValidationMessageFor(m => m.Email, null, new { @class = "text-danger" })
-                        </div>
-                        <div class="form-group">
-                            @Html.LabelFor(m => m.Password)
+        border: 1px solid #333;
+        border-radius: 25px;
+        padding: 0.75rem;
+        color: #333;
+        background-color: transparent;
+    }
 
-                            @* @Html.PasswordFor(m => m.Password, new { @class = "form-control", @id = "password" }) *@
-                            <div class="input-group">
-                                @Html.PasswordFor(m => m.Password, new { @class = "form-control", @id = "password" })
-                                <div class="input-group-append">
-                                    <button type="button" class="togglePass" id="togglePassword">
-                                        <i class="fas fa-eye eyeicn" id="eyeIcon"></i>
-                                    </button>
-                                </div>
-                            </div>
+    .btn-create:hover {
+        background-color: #393636;
+        color: white;
+    }
 
-                            @Html.ValidationMessageFor(m => m.Password, null, new { @class = "text-danger" })
-                        </div>
-                        <div class="form-group">
-                            @Html.LabelFor(m => m.ConfirmPassword)
+    .password-field {
+        position: relative;
+    }
 
-                            @* @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control", @id = "confirmPassword" }) *@
+    .password-toggle {
+        position: absolute;
+        right: 0.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #6c757d;
+        text-decoration: none;
+        font-size: 1.1rem;
+        border: none;
+        background: transparent;
+    }
+</style>
 
-                            <div class="input-group">
-                                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control", @id = "confirmPassword" })
-                                <div class="input-group-append">
-                                    <button type="button" class="togglePass" id="toggleConfirmPassword" onclick="toggleConfirmPassword()">
-                                        <i class="fas fa-eye eyeicn" id="eyeIconConfirm"></i>
-                                    </button>
-                                </div>
-                            </div>
-
-                            @Html.ValidationMessageFor(m => m.ConfirmPassword, null, new { @class = "text-danger" })
-                        </div>
-                        <button type="submit" class="btn btn-primary mt-2">Register</button>
-                    </form>
-                </div>
-                <div class="card-footer">
-                    <p>Go to Login <a asp-action="Index" asp-controller="Home">Login</a></p>
-                </div>
-            </div>
+<div class="container">
+    <div class="form-container">
+        <div class="avatar-placeholder"></div>
+        <h1 class="text-center mb-4">Create an account</h1>
+        <div class="text-center mb-4">
+            Already have an account? <a asp-action="Index" asp-controller="Home" class="text-dark">Log in</a>
         </div>
+        @if (ViewBag.Message != null)
+        {
+            <div class="alert alert-danger" role="alert">
+                @ViewBag.Message
+            </div>
+        }
+
+        <form method="post">
+            <div class="mb-3 form-group">
+                @Html.LabelFor(m => m.Username, new { @class = "form-label" })
+
+                @Html.TextBoxFor(m => m.Username, new { @class = "form-control", @id = "Username", @placeholder = "Enter your profile name" })
+
+                @Html.ValidationMessageFor(m => m.Username, null, new { @class = "text-danger" })
+            </div>
+
+            <div class="mb-3 form-group">
+                @Html.LabelFor(m => m.Email, new { @class = "form-label" })
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @id = "Email", @placeholder = "Enter your email" })
+                @Html.ValidationMessageFor(m => m.Email, null, new { @class = "text-danger" })
+            </div>
+
+            <div class="mb-4 form-group">
+                @Html.LabelFor(m => m.Password, new { @class = "form-label" })
+                <div class="password-field">
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control", @id = "Password" ,@placeholder = "Enter your password" })
+                    <button type="button" class="password-toggle" id="togglePassword"><i class="fas fa-eye eyeicn" id="eyeIcon"></i></button>
+                </div>
+                @Html.ValidationMessageFor(m => m.Password, null, new { @class = "text-danger" })
+            </div>
+            <div class="mb-4 form-group">
+
+                @Html.LabelFor(m => m.ConfirmPassword, new { @class = "form-label" })
+                <div class="password-field">
+                    @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control", @id = "ConfirmPassword", @placeholder = "Confirm your password" })
+                    <button type="button" class="password-toggle" id="toggleConfirmPassword">
+                        <i class="fas fa-eye eyeicn" id="eyeIconConfirm"></i>
+                    </button>
+                </div>
+                @Html.ValidationMessageFor(m => m.ConfirmPassword, null, new { @class = "text-danger" })
+            </div>
+
+            <button type="submit" class="btn btn-create">Create an account</button>
+        </form>
+
     </div>
 </div>
-
-
 
 <script src="~/js/register.js"></script>

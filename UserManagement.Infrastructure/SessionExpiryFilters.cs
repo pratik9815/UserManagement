@@ -2,18 +2,23 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Routing;
+using Newtonsoft.Json;
 using UserManagement.Application.IServices;
+using UserManagement.Domain.Entities;
 using UserManagement.Infrastructure.IRepositories;
+using UserManagement.Infrastructure.UOW;
 
 namespace UserManagement.Api.Services;
 public class SessionExpiryFilters : ActionFilterAttribute
 {
     private readonly IGlobalFunction _globalFunction;
     private readonly IJwtService _jwtService;
-    public SessionExpiryFilters(IGlobalFunction globalFunction, IJwtService jwtService)
+    private readonly IUnitOfWork _uow;
+    public SessionExpiryFilters(IGlobalFunction globalFunction, IJwtService jwtService, IUnitOfWork uow)
     {
         _globalFunction = globalFunction;
         _jwtService = jwtService;
+        _uow = uow;
     }
     public override void OnActionExecuting(ActionExecutingContext actionExecutingContext)
     {
@@ -24,6 +29,9 @@ public class SessionExpiryFilters : ActionFilterAttribute
 
         //Dictionary<string, StringValues>? parseQuery = QueryHelpers.ParseNullableQuery(realURL.Query);
 
+
+        string returnUrl = httpContext.Request.Query["ReturnUrl"].ToString();
+
         //Authentication check
         string username = _globalFunction.GetClaims("username");
         //check for refresh token as well
@@ -33,10 +41,21 @@ public class SessionExpiryFilters : ActionFilterAttribute
             RedirectToLogOff(actionExecutingContext);
             //return;
         }
+
         //Set language
 
         //Initialize session data
-
+        if (httpContext.Session.GetString("MenuList") == null)
+        {
+            List<MenuInfo> menuInfos = _uow.Menu.GetMenuList(username);
+            httpContext.Session.SetString("MenuList", JsonConvert.SerializeObject(menuInfos));
+        }
+        if (httpContext.Session.GetString("MenuCode") == null)
+        {
+            List<string> listmenuCode = new List<string>();
+            listmenuCode.Add("pratik");
+            httpContext.Session.SetString("MenuCode", JsonConvert.SerializeObject(listmenuCode));
+        }
         //Authorization check
 
         string token = httpContext.Request.Cookies["Token"]?.ToString();
@@ -47,7 +66,9 @@ public class SessionExpiryFilters : ActionFilterAttribute
             RedirectToLogOff(actionExecutingContext);
             return;
         }
-        //RedirectToDashboard(actionExecutingContext);
+
+
+
         base.OnActionExecuting(actionExecutingContext);
         // If the browser session or authentication session has expired...
 

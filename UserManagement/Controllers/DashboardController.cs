@@ -3,14 +3,13 @@ using Newtonsoft.Json;
 using UserManagement.Api.Services;
 using UserManagement.Domain.Entities;
 using UserManagement.Infrastructure.IRepositories;
-using UserManagement.Infrastructure.Repositories;
 
 namespace UserManagement.Api.Controllers;
 public class DashboardController : Controller
 {
     private const string SessionKey = "UserForm";
     private IUserRepository _userRepository;
-    public DashboardController(IUserRepository userRepository = null)
+    public DashboardController(IUserRepository userRepository)
     {
         _userRepository = userRepository;
     }
@@ -26,11 +25,7 @@ public class DashboardController : Controller
         return View();
     }
 
-    [ServiceFilter<SessionExpiryFilters>]
-    public IActionResult UserList()
-    {
-        return View();
-    }
+
 
     [ServiceFilter<SessionExpiryFilters>]
     public IActionResult UserForm()

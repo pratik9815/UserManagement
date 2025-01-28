@@ -40,6 +40,7 @@ namespace UserManagement.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Index(LoginRequest request)
         {
             try
@@ -157,7 +158,8 @@ namespace UserManagement.Controllers
 
         public IActionResult SetSessionAfterLogin(LoginRequest request,UserCommon userCommon)
         {
-            var menuCodeList = _uow.Menu.GetMenuList();
+
+            var menuCodeList = _uow.Menu.GetMenuList(request.Username);
             var menuList = JsonConvert.SerializeObject(menuCodeList);
             HttpContext.Session.SetString("MenuList", menuList);
             List<string> menuCodes = new List<string>();    

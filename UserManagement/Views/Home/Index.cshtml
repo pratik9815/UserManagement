@@ -87,7 +87,7 @@
 <div class="container">
     <div class="form-container">
         <div class="avatar-placeholder"></div>
-        <h1 class="text-center mb-4 ">Log in</h1>
+        <h1 class="text-center mb-4 ">Log In</h1>
         @if (TempData["Message"] != null)
         {
             if(TempData["Code"] != "0"){
@@ -102,16 +102,17 @@
 
         }
         <form method="post">
+            @Html.AntiForgeryToken()
             <div class="mb-3 form-group">
                 @Html.LabelFor(m => m.Username, new { @class = "form-label" })
-                @Html.TextBoxFor(m => m.Username, new { @class = "form-control", @id = "Username" })
+                @Html.TextBoxFor(m => m.Username, new { @class = "form-control", @id = "Username", @placeholder="Enter Username" })
                 @Html.ValidationMessageFor(m => m.Username, null, new { @class = "text-danger" })
             </div>
 
             <div class="mb-4 form-group">
                 @Html.LabelFor(m => m.Password, new { @class = "form-label" })
                 <div class="password-field">
-                    @Html.PasswordFor(m => m.Password, new { @class = "form-control", @id = "Password" })
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control", @id = "Password", @placeholder = "Enter Password" })
                     <button type="button" class="password-toggle" id="togglePassword">
                         <i class="fas fa-eye eyeicn" id="eyeIcon"></i>
                     </button>

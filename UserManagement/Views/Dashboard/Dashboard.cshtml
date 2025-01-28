@@ -1,6 +1,9 @@
 ﻿@{
     Layout = "~/Views/Dashboard/Index.cshtml"; // Use the dashboard layout
+    string username = _globalFunction.GetClaims("username").ToUpper();
 }
-
-<h2>Welcome to the Dashboard</h2>
-<p>This is the dashboard content.</p>
+<h2>
+    Hello @username <br />
+</h2>
+@* <h2>Welcome to the Dashboard</h2> *@
+<p>This is the dashboard content.</p> 

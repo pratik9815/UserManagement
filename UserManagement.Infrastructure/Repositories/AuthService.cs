@@ -35,7 +35,7 @@ public class AuthService : IAuthService
     public async Task<AuthResponse> LoginAsync(LoginRequest request)
     {
         var authRes = new AuthResponse();
-        var user = await _context.Users
+        ApplicationUser? user = await _context.Users
             .Include(u => u.UserRoles)
                 .ThenInclude(ur => ur.Role)
             .Include(u => u.UserClaims)

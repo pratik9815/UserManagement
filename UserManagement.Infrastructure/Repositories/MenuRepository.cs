@@ -1,4 +1,5 @@
-﻿using UserManagement.Domain.Entities;
+﻿using Dapper;
+using UserManagement.Domain.Entities;
 using UserManagement.Infrastructure.DataContext;
 using UserManagement.Infrastructure.IRepositories;
 
@@ -10,10 +11,16 @@ public class MenuRepository : IMenuRepository
     {
         _dapperContext = dapperContext;
     }
-    public List<MenuInfo> GetMenuList()
+    public List<MenuInfo> GetMenuList(string username)
     {
-        string sql = "select *from main_menu";
-        var res = _dapperContext.Query<MenuInfo>(sql).ToList();
+        string sp = "LoadUser_Menu @username = @username";
+        DynamicParameters parameters = new DynamicParameters();
+        parameters.Add("@username", username);
+
+        var res = _dapperContext.Query<MenuInfo>(sp, parameters).ToList();
+
+        //string sql = "select *from main_menu order by menu_order asc";
+        //var res = _dapperContext.Query<MenuInfo>(sql).ToList();
         return res;
     }
 }

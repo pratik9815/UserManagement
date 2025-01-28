@@ -88,7 +88,7 @@ public class DapperContext
     {
         using (var connection = CreateConnection())
         {
-            return connection.ExecuteScalar<T>(sql, param);
+            return connection.ExecuteScalar<T>(sql, param, commandType:CommandType.StoredProcedure);
         }
     }
 

@@ -1,0 +1,117 @@
+﻿@model UserManagement.Api.Models.AddUpdateUserViewModel;
+@{
+    Layout = "~/Views/Dashboard/Index.cshtml";
+    var isUpdate = Model.Id != 0;  
+    ViewData["Title"] = isUpdate ? "Edit User" : "Register User";
+}
+
+<style>
+    .container{
+        min-height:100%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        width:100vw;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 800px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+    }
+
+    .form-control {
+        padding: 12px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+
+    .form-control:focus {
+        box-shadow: none;
+        border-color: #64B5F6;
+    }
+
+    .btn-register {
+        background: #64B5F6;
+        color: white;
+        padding: 12px;
+        border: none;
+        width: 100%;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+
+    .btn-register:hover {
+        background: #5EA8E6;
+    }
+
+    .form-check-input:checked {
+        background-color: #64B5F6;
+        border-color: #64B5F6;
+    }
+
+    /* Custom styles for the dropdown */
+    .form-select.custom-dropdown {
+        border-radius: 0.375rem; /* Rounded corners */
+        border: 1px solid #ced4da; /* Light border */
+        padding: 0.5rem 1rem; /* Padding inside the dropdown */
+        font-size: 1rem; /* Font size */
+        font-family: 'Arial', sans-serif; /* Font for the dropdown */
+        background-color: #fff; /* White background */
+        transition: all 0.3s ease; /* Smooth transition */
+        cursor:pointer;
+    }
+</style>
+<div class="container">
+
+    <div class="card">
+       
+            @if (TempData["Message"] != null)
+            {
+            <div class="alert alert-danger d-flex justify-content-center align-item-center">
+                <p>@TempData["Message"]</p>
+            </div>
+            }
+        
+        <h2 class="mb-4">@ViewData["Title"]</h2>
+        @using (Html.BeginForm("AddUpdateUser", "User", FormMethod.Post, new { @class = "form" }))
+        {
+            @Html.AntiForgeryToken()
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    @Html.LabelFor(model => model.Username, new { @class = "form-label" })
+                    @Html.TextBoxFor(model => model.Username, new { @class = "form-control", placeholder = "Enter your name" })
+                    @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-md-6">
+                    @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "form-label" })
+                    @Html.TextBoxFor(model => model.Email, new { @class = "form-control", placeholder = "Enter your username" })
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    @Html.LabelFor(model => model.Password, new { @class = "form-label" })
+                    @Html.TextBoxFor(model => model.Password, new { @class = "form-control", placeholder = "Enter your Password" })
+                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-md-6">
+                    @Html.LabelFor(model => model.Roles, new { @class = "form-label" })
+                    @Html.DropDownListFor(model => model.RoleId, Model.Roles, "-- Select Role --", new { @class = "form-control form-select custom-dropdown" })
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div>
+                    @Html.LabelFor(model => model.IsActive, new {@class = "form-label"})
+                    @Html.CheckBoxFor(model => model.IsActive, new { @class = "form-check-input", id = "isActive" })
+                </div>
+            </div>
+            <button type="submit" class="btn btn-register">Register</button>
+        }
+    </div>
+
+</div>
+

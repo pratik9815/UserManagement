@@ -1,7 +1,8 @@
 ﻿@using UserManagement
+@using UserManagement.Infrastructure.IRepositories
 @using UserManagement.Models
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
 @inject IHttpContextAccessor _httpContextAccessor
 @inject IConfiguration _configuration
-    
+@inject IGlobalFunction _globalFunction;

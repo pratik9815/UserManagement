@@ -52,7 +52,7 @@ public class JwtService : IJwtService
         // Add roles
         foreach (var role in roles)
         {
-            descriptor.Subject.AddClaim(new Claim("UserRole", role));
+            descriptor.Subject.AddClaim(new Claim("UserRole", _globalFunction.Encrypt(role)));
         }
 
         // Add custom claims

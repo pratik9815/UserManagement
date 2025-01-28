@@ -17,7 +17,7 @@ public class DataLogin : IDataLogin
         paramToInsertRefreshToken.Add("@token_user_id", username);
         paramToInsertRefreshToken.Add("@protectedticket", protectedTicket);
         paramToInsertRefreshToken.Add("@Create_ts", DateTime.UtcNow);
-        paramToInsertRefreshToken.Add("@expire_ts", DateTime.UtcNow.AddHours(1));
+        paramToInsertRefreshToken.Add("@expire_ts", DateTime.UtcNow.AddDays(7));
         string sqlToInsertRefreshToken = $"insert into authtoken(AUTHORIZATION_TYPE,token_user_id,protectedticket,create_ts,expire_ts) values ('RefreshToken',@token_user_id,@protectedticket,@Create_ts,@expire_ts)";
         _context.Execute(sqlToInsertRefreshToken, paramToInsertRefreshToken);
     }

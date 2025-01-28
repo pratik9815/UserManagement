@@ -1,0 +1,149 @@
+﻿@model List<UserManagement.Domain.Entities.UserResponse>;
+@{
+    Layout = "~/Views/Dashboard/Index.cshtml"; // Use the dashboard layout
+    ViewData["Title"] = "User Management";
+    var sno = 1;
+}
+<style>
+    .search-container {
+        /* position: relative; */
+        width: 300px;
+    }
+
+    .search-container input {
+        padding-left: 2rem;
+        border-radius: 8px;
+        border: 1px solid #e0e0e0;
+    }
+    .fas{
+        position: relative;
+        top: 32px;
+        left: 10px;
+    }
+
+    .table {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .table th {
+        border-bottom: 2px solid #f0f0f0;
+        color: #666;
+        font-weight: 500;
+    }
+
+    .table td {
+        padding: 1rem 0.75rem;
+        vertical-align: middle;
+    }
+
+    .form-check-input {
+        cursor: pointer;
+    }
+
+    .form-switch .form-check-input {
+        width: 2.5em;
+        height: 1.25em;
+    }
+
+    .btn-success {
+        padding: 0.5rem 1.5rem;
+        border-radius: 6px;
+    }
+
+    .badge {
+        padding: 0.5em 1em;
+        border-radius: 1rem;
+    }
+
+</style>
+
+<div class="bg-light">
+
+    <div class="container-fluid py-4">
+        <!-- Header -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="search" class="form-control" placeholder="Search">
+            </div>
+            <a class="btn btn-success"  asp-action="AddUpdateUser" 
+                                        asp-controller="User">Add New</a>
+        </div>
+        <!-- Table -->
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Gender</th>
+                        <th>Access to the System</th>
+                        <th>Status</th>
+                        <th>Edit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Username</td>
+                            <td>@item.Email</td>
+                            <td>@item.Role</td>
+                            <td>
+                                @item.Gender.ToString()
+                            </td>
+                            <td>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" checked>
+                                </div>
+                            </td>
+                            <td>
+                                @if (item.IsActive)
+                                {
+                                    <span class="badge bg-success-subtle text-success">Active</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-danger-subtle text-danger">Inactive</span>
+                                }
+                                @* <span class="badge bg-success-subtle text-success">Active</span> *@
+                            </td>
+                            <td>
+                                <div class="d-flex gap-2">
+                                        <a class="btn btn-sm btn-light" 
+                                                        asp-action="AddUpdateUser" 
+                                                        asp-controller="User" 
+                                                        asp-route-id="@item.UserId">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                         </a>
+                                    <button class="btn btn-sm btn-light"><i class="fa-sharp fa-solid fa-trash"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+
+
+<a href="~/lib/jquery/dist/jquery.min.map"></a>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#editUser').click(function(){
+            alert('Edit user clicked');
+        });
+        $('#removeUser').click(function(){
+            alert('Remove user clicked');
+        });
+    });
+</script>

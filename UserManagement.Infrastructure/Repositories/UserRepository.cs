@@ -8,7 +8,6 @@ namespace UserManagement.Infrastructure.Repositories;
 public class UserRepository : IUserRepository
 {
     public readonly DapperContext _context;
-    private readonly GlobalFunction _globalFunction;
 
     public UserRepository(DapperContext context)
     {
@@ -27,7 +26,7 @@ public class UserRepository : IUserRepository
         return objUserCommon;
     }
 
-    public List<RoleResponse> GetAllRoleList()
+    public List<RoleResponse> GetAllRoles()
     {
         var sql = "select *from roles";
         List<RoleResponse> data = _context.Query<RoleResponse>(sql).ToList();
@@ -42,5 +41,53 @@ public class UserRepository : IUserRepository
         para.Add("@userId", userName);
         var res = _context.ExecuteScalar<DbResponse>(sql, para);
         return res;
+    }
+
+    public List<UserResponse> GetUserList()
+    {
+        string sp = "spa_user_list @flag = @flag";
+        DynamicParameters para = new DynamicParameters();
+        para.Add("@flag", 's');
+        var res = _context.Query<UserResponse>(sp,para).ToList();
+        return res;
+    }
+
+    public UserResponse GetUserById(int? id)
+    {
+        string sp = "spa_user_list @flag = @flag,@user_id = @userid";
+        DynamicParameters para = new DynamicParameters();
+        para.Add("@flag", 's');
+        para.Add("@userid", id);
+        var res = _context.QueryFirstOrDefault<UserResponse>(sp, para);
+        return res;
+    }
+
+    public DbResponse UpdateUser(UserCommon user)
+    {
+        string sp = "spa_user_list";
+        DynamicParameters para = new DynamicParameters();
+        para.Add("@flag", 'u');
+        para.Add("@user_id", user.UserId);
+        para.Add("@username", user.Username);
+        para.Add("@email", user.Email);
+        para.Add("@gender", user.Gender);
+        para.Add("@role", user.RoleId);
+
+        try
+        {
+            var res = _context.Execute(sp, para);
+            if (res > 0)
+            {
+                return new DbResponse { Status_Code = "0", Msg = "User Updated Successfully" };
+            }
+            else
+            {
+                return new DbResponse { Status_Code = "1", Msg = "User Update Failed" };
+            }
+        }
+        catch (Exception ex)
+        {
+            return new DbResponse { Status_Code = "1", Msg = "Error occured while updating the user" };
+        }
     }
 }

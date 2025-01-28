@@ -1,3 +1,7 @@
-﻿<h1>
-    This is dashboard
+﻿@{
+    string username = _globalFunction.GetClaims("username").ToUpper();
+}
+<h1>
+    Hello @username <br />
+    Welcome to the Dashboard
 </h1>

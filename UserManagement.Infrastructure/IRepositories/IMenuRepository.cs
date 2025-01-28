@@ -3,5 +3,5 @@
 namespace UserManagement.Infrastructure.IRepositories;
 public interface IMenuRepository
 {
-    List<MenuInfo> GetMenuList(); 
+    List<MenuInfo> GetMenuList(string username); 
 }
